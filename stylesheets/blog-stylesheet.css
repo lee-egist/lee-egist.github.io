@@ -54,3 +54,6 @@ footer {
 td {
   padding: 10px;
 }
+.hiddenElem {
+  display:none;
+}
