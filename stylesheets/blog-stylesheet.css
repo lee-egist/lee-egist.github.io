@@ -1,0 +1,56 @@
+h1, h2, h3, h4{
+  font-family: 'IM Fell English', serif;
+  color: #B2A485;
+}
+p, ol {
+  font-family: 'Josefin Slab';
+  font-size: 1.5em;
+  color: #4F5F7A;
+
+}
+nav a:link{
+  font-family: 'Exo', sans-serif;
+  color: #403D36;
+}
+nav a:hover{
+  font-family: 'Exo', sans-serif;
+  color: #97D8FF;
+}
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2.75em;
+  padding-right: 2.75em;
+}
+body {
+  background-color: #FFF2EC;
+}
+.postMedia {
+  float :right;
+  width: 375px;
+  height:375px;
+  padding:1.5em;
+}
+.textImg {
+  font-size: 3em;
+  padding: .25em;
+}
+.textImg a:link, #pager a:link {
+  text-decoration: none;
+  font-family: 'Lora', serif;
+}
+.textImg a:hover {
+  color: gray;
+}
+footer, #pager{
+  text-align: center;
+}
+#firstpage {
+  visibility: hidden;
+}
+footer {
+  font-family: 'Exo';
+}
+td {
+  padding: 10px;
+}
