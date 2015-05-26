@@ -52,7 +52,6 @@ footer, #pager{
   text-align: center;
 }
 #firstpage {
-  visibility: hidden;
 }
 footer {
   font-family: 'Exo';
