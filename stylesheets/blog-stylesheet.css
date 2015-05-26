@@ -10,6 +10,7 @@ p, ol {
 }
 nav {
   text-align: left;
+  font-family: 'Exo', sans-serif;
 }
 nav a:link{
   font-family: 'Exo', sans-serif;
