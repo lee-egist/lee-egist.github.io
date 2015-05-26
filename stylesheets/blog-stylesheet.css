@@ -11,6 +11,7 @@ p, ol {
 nav {
   text-align: left;
   font-family: 'Exo', sans-serif;
+  postion: relative;
 }
 nav a:link{
   font-family: 'Exo', sans-serif;
@@ -31,6 +32,7 @@ main {
 }
 body {
   background-color: #FFF2EC;
+  position:relative;
 }
 .postMedia {
   float :right;
@@ -62,4 +64,14 @@ td {
 }
 .hiddenElem {
   display:none;
+}
+#sepleft {
+  position: absolute;
+  bottom:50%;
+  left: 5%;
+}
+#sepright {
+  position:absolute;
+  top:50%;
+  left: 95%;
 }

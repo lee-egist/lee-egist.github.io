@@ -24,6 +24,7 @@ body {
   padding-right: 2em;
   text-align: center;
   background-color:#C3C3C3;
+  position: relative;
 }
 nav {
   margin-left: auto;
@@ -88,4 +89,12 @@ footer table {
 }
 #links {
   text-align: right;
+  position: absolute;
+  right:5%;
+  padding-bottom: 2.5%;
+}
+#copyright {
+  position: absolute;
+  left:5%;
+  padding-bottom: 2.5%;
 }
