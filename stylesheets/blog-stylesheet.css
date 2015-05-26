@@ -8,6 +8,9 @@ p, ol {
   color: #4F5F7A;
 
 }
+nav {
+  text-align: left;
+}
 nav a:link{
   font-family: 'Exo', sans-serif;
   color: #403D36;
@@ -15,6 +18,9 @@ nav a:link{
 nav a:hover{
   font-family: 'Exo', sans-serif;
   color: #97D8FF;
+}
+nav li {
+  display: inline;
 }
 main {
   margin-left: auto;
