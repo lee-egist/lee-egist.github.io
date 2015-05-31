@@ -2,6 +2,9 @@ h1, h2, h3, h4{
   font-family: 'IM Fell English', serif;
   color: #B2A485;
 }
+h1{
+  font-size: 1.75em;
+}
 p, ol {
   font-family: 'Josefin Slab';
   font-size: 1.5em;
