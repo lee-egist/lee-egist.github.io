@@ -78,3 +78,31 @@ td {
   top:50%;
   left: 95%;
 }
+#aside {
+float: left;
+height: 100%;
+border: 1px solid black;
+border-radius: 5px;
+padding:.5em;
+}
+section {
+  position: relative;
+  height: 700px;
+  overflow: scroll;
+}
+article{
+  padding-left: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  left: 2em;
+}
+li a{
+  text-decoration: none;
+}
+header nav{
+  text-align: center;
+}
+nav {
+  position: static;
+}

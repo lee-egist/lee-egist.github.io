@@ -4,8 +4,66 @@
   <title>
     Sententia
   </title>
-<meta http-equiv="refresh" content="0; URL='t2-css-design.html'" />
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Lora|Josefin+Slab:400italic|Exo|IM+Fell+English:400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <header>
+    <nav>
+    <li><a href="#">Technical</a></li>
+    <li><a href="#">Cultural</a></li>
+    </nav>
+  </header>
+    <section>
+      <div id="aside">
+        <ul>
+          <li><a href="t1-git-blog.html">Git</a></li>
+          <li><a href="t2-css-design.html">Css Design</a></li>
+          <li><a href="c1-chefs-kitchen.html">Chefs Kitchen</a></li>
+        </ul>
+      </div>
+      <article>
+        <h1>Thinking outside of the box</h1>
+        <h4>Monday May 25, 2015</h4>
+        <p>
+          Did you know that on a webpage everything is a box? It's true! Every div, every table, every paragraph, everything! They are all boxes. They have a height and a width. Not only this but everything on a webpage has a natural postion by default. This is called it's static postion. That means that when you create a paragraph or any other html markdown object, it has a natural position on the webpage.<br>
+          So why does this matter?<br>
+          Well in the field of website design placement of objects is crucial to site usuablity, that is why most often you will find navigation links either at the top or at the left of a web page, or why copyright information is most oftern at the bottom of a webpage. These things are not often by choose, but by convention. or rather by user preferences that have become conventions.<br>
+          and here is where css postion attribute comes in handy...<br>
+          the css position element allow you to place your objects where ever you please regardless of there naturally occuring postion. The postion attribute has 4 possible states static, relative, absolute and fixed. the best illustrations of how these values change the postion of an element can be found at <a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/"> Learn CSS Positioning in Ten Steps </a>. Here is a brief description of the properties of these values.</p>
+          <p>
+            <table>
+              <tr>
+                <td>
+          <ul>
+            <li>static</li>
+              <ol><li>Default postion for all elements</li>
+                <li>This is where the element will naturally appear on the webpage</li>
+              </ol>
+            <li>relative</li>
+              <ol>
+                <li>appears relative to it's static postion</li>
+                <li>must also accompany a top, bottom, left, or right css attribute</li>
+                <li>can be used with z-index. by default relative postion overlaps static postion</li>
+                <li>any child element with absolute postioning will be postioned relative to it's nearest relatively postion parent element</li>
+              </ol>
+            <li>absolute</li>
+              <ol>
+                <li>Place exactly where you want relative to the nearest relatively positioned element,if any.</li>
+                <li> If there is no such parent, it will default all the way back up to the <html> element</li>
+                <li>these eleemnts are removed from the natural flow of elements.</li>
+              </ol>
+            <li>fixed</li>
+              <ol>
+                <li>positioned relative to the web browser window</li>
+                <li>position doesn't change while scrolling</li>
+              </ol>
+          </ul>
+        </p>
+      </td>
+        </tr>
+      </table>
+      </article>
+    </section>
 </body>
 </html>
