@@ -2,28 +2,39 @@ h1, h2, h3, h4{
   font-family: 'IM Fell English', serif;
   color: #B2A485;
 }
+
 h1{
   font-size: 1.75em;
 }
+
 p, ol {
   font-family: 'Josefin Slab';
   font-size: 1.5em;
   color: #4F5F7A;
-
 }
+
 nav {
   text-align: left;
   font-family: 'Exo', sans-serif;
   postion: relative;
 }
+
 nav a:link{
   font-family: 'Exo', sans-serif;
   color: #403D36;
 }
-nav a:hover{
+
+nav a:hover {
   font-family: 'Exo', sans-serif;
   color: #97D8FF;
 }
+a:hover {
+  color: #97D8FF;
+}
+/*a:active {
+  visibility: hidden;
+}*/
+
 nav li {
   display: inline;
 }
@@ -33,76 +44,120 @@ main {
   padding-left: 2.75em;
   padding-right: 2.75em;
 }
+
 body {
   background-color: #FFF2EC;
   position:relative;
 }
+
 .postMedia {
   float :right;
   width: 375px;
   height:375px;
   padding:1.5em;
 }
+
 .textImg {
   font-size: 3em;
   padding: .25em;
 }
+
 .textImg a:link, #pager a:link {
   text-decoration: none;
   font-family: 'Lora', serif;
 }
+
 .textImg a:hover {
   color: gray;
 }
+
 footer, #pager{
   text-align: center;
 }
+
 #firstpage {
 }
+
 footer {
   font-family: 'Exo';
 }
+
 td {
   padding: 10px;
 }
+
 .hiddenElem {
   display:none;
 }
+
 #sepleft {
   position: absolute;
   bottom:50%;
   left: 5%;
 }
+
 #sepright {
   position:absolute;
   top:50%;
   left: 95%;
 }
+
 #aside {
 float: left;
 height: 100%;
+background-color: brown;
 border: 1px solid black;
 border-radius: 5px;
-padding:.5em;
+padding: .5em;
+text-align: center;
+font-size: 1.25em;
 }
+#aside li {
+  list-style-type: none;
+}
+
 section {
   position: relative;
   height: 700px;
   overflow: scroll;
 }
+
 article{
-  padding-left: 2em;
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  left: 2em;
+  left: 2em;*/
+  float: left;
+  width:80%;
+  padding-left: 2.5em;
 }
+
 li a{
   text-decoration: none;
+  font-family: 'Exo';
 }
+
+li {
+  margin-left: 0px;
+  margin: 1em;
+  font-family: 'Lora';
+}
+ul {
+  padding-left: 0px;
+}
+
 header nav{
   text-align: center;
 }
+
 nav {
   position: static;
+}
+#bullets > li{
+  list-style-type: circle;
+  font-size: 1.5em;
+}
+.bullet2 > li{
+  font-size: .75em;
+  list-style-type: upper-roman;
 }
