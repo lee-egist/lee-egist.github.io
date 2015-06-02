@@ -222,3 +222,15 @@ h1, h2, h3, h4{
   .hiddenSmall {
     visibility: hidden;
   }
+
+    li a{
+    text-decoration: none;
+    font-family: 'Exo';
+  }
+
+  li {
+    margin-left: 0px;
+    margin: 1em;
+    font-family: 'Lora';
+    font-weight: bolder;
+  }
