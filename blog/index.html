@@ -29,54 +29,33 @@
           <li><a href="c1-chefs-kitchen.html">Chefs Kitchen</a></li>
         </ul>
       </div>
-      <article>
-        <h1>Thinking outside of the box</h1>
-        <h4>Monday May 25, 2015</h4>
+          <article>
+      describes and compares arrays and hashes. Be sure to include examples! Learn how to include code snippets for Ruby in html as well so it's beautifully formatted!
+      <h1> Hashes... that good good!<h1>
         <p>
-          Did you know that on a webpage everything is a box? It's true! Every div, every table, every paragraph, everything! They are all boxes. They have a height and a width. Not only this but everything on a webpage has a natural postion by default. This is called it's static postion. That means that when you create a paragraph or any other html markdown object, it has a natural position on the webpage.<br>
-          So why does this matter?<br>
-          Well in the field of website design placement of objects is crucial to site usuablity, that is why most often you will find navigation links either at the top or at the left of a web page, or why copyright information is most oftern at the bottom of a webpage. These things are not often by choose, but by convention. or rather by user preferences that have become conventions.<br>
-          and here is where css postion attribute comes in handy...<br>
-          the css position element allow you to place your objects where ever you please regardless of there naturally occuring postion. The postion attribute has 4 possible states static, relative, absolute and fixed. the best illustrations of how these values change the postion of an element can be found at <a href="http://www.barelyfitz.com/screencast/html-training/css/positioning/"> Learn CSS Positioning in Ten Steps </a>. Here is a brief description of the properties of these values.</p>
-          <p>
-            <table>
-              <tr>
-                <td>
-          <ul id="bullets">
-            <li>static</li>
-              <ol class="bullet2"><li>Default postion for all elements</li>
-                <li>This is where the element will naturally appear on the webpage</li>
-              </ol>
-            <li>relative</li>
-              <ol class="bullet2">
-                <li>appears relative to it's static postion</li>
-                <li>must also accompany a top, bottom, left, or right css attribute</li>
-                <li>can be used with z-index. by default relative postion overlaps static postion</li>
-                <li>any child element with absolute postioning will be postioned relative to it's nearest relatively postion parent element</li>
-              </ol>
-            <li>absolute</li>
-              <ol class="bullet2">
-                <li>Place exactly where you want relative to the nearest relatively positioned element,if any.</li>
-                <li> If there is no such parent, it will default all the way back up to the <html> element</li>
-                <li>these eleemnts are removed from the natural flow of elements.</li>
-              </ol>
-            <li>fixed</li>
-              <ol class="bullet2">
-                <li>positioned relative to the web browser window</li>
-                <li>position doesn't change while scrolling</li>
-              </ol>
-          </ul>
-        </p>
-      </td>
-        </tr>
-      </table>
-      </article>
+          Now i know what your thinking : <em> But isn't a hash just an array.</em> Sorry that is incorrect. well at least in ruby. In ruby a hashes is an associative array instead of being index like the normal array.<br>
+          here is an example of a normal array:
+          <blockquote>
+            variable1 = [100, 'two', 'knife' 'cheeseburger' ]
+          </blockquote>
+
+          now here is an example of a hash:
+
+          <blockquote> variable2 = {"name" => "Sally", "number" => 42, "sports" => ["basketball", "baseball", "Hockey"] }</blockquote>
+
+          assuming you wasnted to get the value of the first item variable in variable1 you could write code like this <blockquote> variable1[0]</blockquote><br>
+          however to get the same first item from variable2 your code would look like this: <blockquote> variable2["name"]</blockquote>
+
+          this is what is mean by associative array. you access the value in a hash by there associate keys. a lot like dictionaries in other programming languages. Both arrays and dictionary have class methods of there own but they also share a few.
+
+    </article>
     </section>
         <nav id="pager" class="hiddenSmall">
       <h1 class="hiddenElem">pager</h1>
-      <a href="t2-css-design.html">1</a> |
-      <a href="c1-chefs-kitchen.html">2</a> |
-      <a href="t1-git-blog.html">3</a>
+      <a href="t2-arrays-hashes.html">1</a> |
+      <a href="t2-css-design.html">2</a> |
+      <a href="c1-chefs-kitchen.html">3</a> |
+      <a href="t1-git-blog.html">4</a>
     </nav>
     <hr>
     <footer>
