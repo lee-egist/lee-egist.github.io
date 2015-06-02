@@ -235,6 +235,7 @@ li {
   font-family: 'Lora';
   font-weight: bolder;
   list-style-type: none;
+  padding-left: 0px;
 }
 
 #aside {
