@@ -30,24 +30,33 @@
       </ul>
     </div>
     <article>
-      describes and compares arrays and hashes. Be sure to include examples! Learn how to include code snippets for Ruby in html as well so it's beautifully formatted!
-      <h1> Hashes... that good good!<h1>
+      <h1> Hashes... that good good!</h1>
         <p>
-          Now i know what your thinking : <em> But isn't a hash just an array.</em> Sorry that is incorrect. well at least in ruby. In ruby a hashes is an associative array instead of being index like the normal array.<br>
-          here is an example of a normal array:
+          Now i know what your thinking : <em> But isn't a hash just an array.</em> Sorry that is incorrect. well at least in ruby. In ruby a hashes is an associative array instead of being indexed like the normal array.<br>
+          here is an example of a normal array:</p>
           <blockquote>
             variable1 = [100, 'two', 'knife' 'cheeseburger' ]
           </blockquote>
+          <p>now here is an example of a hash:</p>
+          <blockquote>
+          variable2 = {"name" => "Sally", "number" => 42, "sports" => ["basketball", "baseball", "Hockey"] }
+          </blockquote>
+          <p>
+            assuming you wasnted to get the value of the first item variable in variable1 you could write code like this
+          </p>
+          <blockquote>
+            variable1[0]
+          </blockquote>
+          <p>
+            however to get the same first item from variable2 your code would look like this:
+          </p>
+          <blockquote>
+            variable2["name"]
+          </blockquote>
 
-          now here is an example of a hash:
-
-          <blockquote> variable2 = {"name" => "Sally", "number" => 42, "sports" => ["basketball", "baseball", "Hockey"] }</blockquote>
-
-          assuming you wasnted to get the value of the first item variable in variable1 you could write code like this <blockquote> variable1[0]</blockquote><br>
-          however to get the same first item from variable2 your code would look like this: <blockquote> variable2["name"]</blockquote>
-
-          this is what is mean by associative array. you access the value in a hash by there associate keys. a lot like dictionaries in other programming languages. Both arrays and dictionary have class methods of there own but they also share a few.
-
+          <p>
+            this is what is mean by associative array. you access the value in a hash by there associate keys. a lot like dictionaries in other programming languages. Both arrays and dictionary have class methods of there own but they also share a few.
+          </p>
     </article>
   </section>
   <nav id="pager" class="hiddenSmall">
