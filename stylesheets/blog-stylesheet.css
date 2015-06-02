@@ -191,51 +191,53 @@ h1, h2, h3, h4{
   color: #B2A485;
 }
 
-  p, ol {
-    font-family: 'Josefin Slab';
-    font-size: 1.5em;
-    color: #4F5F7A;
-    text-align: justify;
-  }
+p, ol {
+  font-family: 'Josefin Slab';
+  font-size: 1.5em;
+  color: #4F5F7A;
+  text-align: justify;
+}
 
-  #bullets {
-    padding-left: 2.5%;
-  }
-    nav a:link{
-    font-family: 'Exo', sans-serif;
-    color: #403D36;
-  }
+#bullets {
+  padding-left: 2.5%;
+}
+  nav a:link{
+  font-family: 'Exo', sans-serif;
+  color: #403D36;
+}
 
-    #bullets > li{
-    list-style-type: circle;
-    font-size: 1.5em;
-    border: 1px solid black;
-    margin-bottom: .5em;
-    margin-top: .5em;
-  }
+  #bullets > li{
+  list-style-type: circle;
+  font-size: 1.5em;
+  border: 1px solid black;
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
 
-  .bullet2 > li{
-    font-size: 1em;
-    list-style-type: upper-roman;
-  }
+.bullet2 > li{
+  font-size: 1em;
+  list-style-type: upper-roman;
+}
 
-  .hiddenSmall {
-    visibility: hidden;
-  }
+.hiddenSmall {
+  visibility: hidden;
+}
 
-    li a{
-    text-decoration: none;
-    font-family: 'Exo';
-  }
+  li a{
+  text-decoration: none;
+  font-family: 'Exo';
+}
 
-  li {
-    margin-left: 0px;
-    margin: 1em;
-    font-family: 'Lora';
-    font-weight: bolder;
-  }
 
-  #aside {
+li {
+  margin-left: 0px;
+  margin: 1em;
+  font-family: 'Lora';
+  font-weight: bolder;
+  list-style-type: none;
+}
+
+#aside {
   float: left;
   height: 100%;
   background-color: brown;
@@ -244,4 +246,4 @@ h1, h2, h3, h4{
   padding: .5em;
   text-align: center;
   font-size: 1.25em;
-  }
+}
