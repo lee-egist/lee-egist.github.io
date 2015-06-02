@@ -234,3 +234,14 @@ h1, h2, h3, h4{
     font-family: 'Lora';
     font-weight: bolder;
   }
+
+  #aside {
+  float: left;
+  height: 100%;
+  background-color: brown;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: .5em;
+  text-align: center;
+  font-size: 1.25em;
+  }
