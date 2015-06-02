@@ -1,5 +1,11 @@
 @media only screen and (min-width: 500px) {
 
+  blockquote{
+        font-family: 'Josefin Slab';
+    font-size: 1.5em;
+    color: #4F5F7A;
+  }
+
   h1, h2, h3, h4{
     font-family: 'IM Fell English', serif;
     color: #B2A485;
