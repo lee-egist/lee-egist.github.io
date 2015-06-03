@@ -3,7 +3,7 @@
   blockquote{
         font-family: 'Josefin Slab';
     font-size: 1.5em;
-    color: #4F5F7A;
+    color: red;
   }
 
   h1, h2, h3, h4{
@@ -251,3 +251,8 @@ li {
 #aside ul {
   padding-left: 0px;
 }
+  blockquote{
+    font-family: 'Josefin Slab';
+    font-size: 1.5em;
+    color: red;
+  }
