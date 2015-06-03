@@ -76,13 +76,6 @@ li {
 }
 
 #aside {
-/*  float: left;
-  height: 100%;
-  background-color: brown;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: .5em;
-  text-align: center;*/
   font-size: 1.25em;
 }
 
@@ -95,19 +88,44 @@ li {
     color: #A30000;
     font-weight: bold;
     background-color: #E8E8E8;
-    margin-left: 80px;
     border-radius: .25em;
   }
+
   ul {
     padding-left: 0px;
   }
 
+  article a{
+
+    font-family:  'Lora', serif;
+    font-size: 1.5em;
+    padding-bottom: 1em;
+  }
+  article {
+    padding-left: :0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  #main td{
+    padding-left: 0px;
+  }
+
+  #preview {
+    width:100%;
+    padding-left: 0px;
+  }
+
+  .preview a:link, .preview a:visited{
+    color:#A30000;
+  }
+
+/******************************************************************************************************************************************************************************************/
   @media only screen and (min-width: 500px) {
 
   blockquote{
     font-family: 'Josefin Slab';
     font-size: 1.5em;
-    color: A30000;
+    color: #A30000;
     font-weight: bold;
   }
 
@@ -195,9 +213,9 @@ li {
     font-family: 'Exo';
   }
 
-  td {
-    padding: 10px;
-  }
+#main td {
+  padding-top: 2.5em;
+}
 
   .hiddenElem {
     display:none;
@@ -219,7 +237,7 @@ li {
   float: left;
   height: 100%;
   background-color: brown;
-  border: 1px solid black;
+  border: 1px solid brown;
   border-radius: 5px;
   padding: .5em;
   text-align: center;
@@ -243,15 +261,24 @@ li {
     overflow: scroll;
     overflow-x: visible;
   }
-
+  section #main {
+    position: relative;
+    left:5%;
+  }
   article{
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    left: 2em;*/
     float: left;
     width:80%;
     padding-left: 2.5em;
+    text-indent: 50px;
+    border-bottom: 1px dotted #A30000;
+    border-right: 1px dotted #A30000;
+    box-shadow: 5px 5px 5px #BA2309;
+  }
+  article p {
+    margin-right: 35px;
   }
 
   li a{
