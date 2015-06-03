@@ -173,7 +173,7 @@
   }
 
   .hiddenSmall {
-    visibility: visible;
+    display: none;
   }
 }
 
