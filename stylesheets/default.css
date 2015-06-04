@@ -123,6 +123,11 @@ footer ul {
 #links a:visited {
   color: #CC0033;
 }
+#links img {
+  width:20px;
+  height: 20px;
+  border-radius: 3px;
+}
 
 @media only screen and (min-width: 500px) {
 
