@@ -186,7 +186,7 @@ footer ul {
 
   footer td {
     display: table-cell;
-    flex-direction:none;
+    flex-direction:initial;
     padding-left: .5em;
     padding-right: .5em;
   }
