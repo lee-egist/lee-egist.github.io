@@ -55,6 +55,7 @@ p, ol {
 .bullet2 > li{
   font-size: 1em;
   list-style-type: upper-roman;
+  text-indent: 0px;
 }
 
 .hiddenSmall {
