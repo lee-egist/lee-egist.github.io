@@ -101,6 +101,9 @@ li {
     font-size: 1.5em;
     padding-bottom: 1em;
   }
+  article #smalla{
+    font-family:  'Lora', serif;
+  }
   article {
     padding-left: :0px;
     padding-top: 1em;
