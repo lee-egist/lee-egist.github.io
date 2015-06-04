@@ -118,6 +118,13 @@ li {
   .preview a:link, .preview a:visited{
     color:#A30000;
   }
+  section {
+      background-image: url("../aristotle.png");
+      background-position: center;
+      background-repeat:no-repeat;
+
+  }
+
 
 /******************************************************************************************************************************************************************************************/
   @media only screen and (min-width: 500px) {

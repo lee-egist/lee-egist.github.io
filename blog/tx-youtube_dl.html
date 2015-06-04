@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sententia | youtube-dl</title>
-  <meta charset="UTF-8">
+  <title>
+    Sententia
+  </title>
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
   <link href='http://fonts.googleapis.com/css?family=Lora|Josefin+Slab:400italic|Exo|IM+Fell+English:400italic' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/gif" href="../favicon.gif">
 </head>
 <body>
-  <h1 class="hiddenElem">body</h1>
+  <header>
   <nav>
     <h1 class="hiddenElem">navigation</h1>
     <ul>
       <li><a href="#">About me</a></li>
-      <li><a href="#">Technical</a></li>
-      <li><a href="#">Cultural</a></li>
+      <li><a href="#">Dev Tech</a></li>
+      <li><a href="#">Dev Culture</a></li>
     </ul>
   </nav>
-  <section>
-    <h1 class="hiddenElem">Article</h1>
-    <hr>
-    <table>
-      <tr>
-        <td class="textImg">
-          <h2 class="hiddenElem"> back button</h2>
-          <a id="firstpage" href="#"><</a>
-        </td>
-        <td>
-          <h2 class="hiddenElem">post</h2>
-          <article>
-          <h1><!-- Post title --></h1>
+  </header>
+  <hr>
+    <section>
+      <div id="aside">
+      <ul>
+        <li><a href="t1-git-blog.html">Git</a></li>
+        <li><a href="t2-css-design.html">Css Design</a></li>
+        <li><a href="c1-chefs-kitchen.html">Chefs Kitchen</a></li>
+        <li><a href="t3-arrays-hashes.html">Arrays & hashes</a><li>
+      </ul>
+      </div>
+      <table id="main">
+        <tr><td>
+    <article class="preview">
+                <h1><!-- Post title --></h1>
           <h4><!-- post date--></h4>
             <p>Do you ever wish you could download that amazing youtube video you just discovered?
             Well guess what you're about 9 years behind the curve there. Not to insult you late adopters but the ablitilty to download youtube video's and music has been avaliable since 2006. That being said it really didn't gain mainstream recognition until 2011.<br>
@@ -59,24 +63,22 @@
             the best thing about this application however is that it works on any platform linux, mac, and windows, and most UNIX based systems.<br>
             So the next time you say to yourself geez that was hilarious i wish i could watch it offline, load up your terminal or command line and grab yourself some satisfaction. You be suprised at how often this  capplication comes in handy.
             </p>
-          </article>
-        </td>
-        <td class="textImg">
-          <h2 class="hiddenElem">next</h2>
-          <a href="t1-git-blog.html">></a>
-        </td>
-      </tr>
-    </table>
-    <nav id="pager" >
+    </article>
+  </td></tr>
+    </table ="main">
+    </section>
+        <nav id="pager" class="hiddenSmall">
       <h1 class="hiddenElem">pager</h1>
-      <a href="c1-chefs-kitchen.html">1</a> |
-      <a href="t1-git-blog.html">2</a>
+      <a href="t2-arrays-hashes.html">1</a> |
+      <a href="t2-css-design.html">2</a> |
+      <a href="c1-chefs-kitchen.html">3</a> |
+      <a href="t1-git-blog.html">4</a>
     </nav>
-  <hr>
-  <footer>
-    <h1 class="hiddenElem">footer</h1>
-    &copy 2015 Erick Gist
-  </footer>
-</section>
+    <hr>
+    <footer>
+      <h1 class="hiddenElem">footer</h1>
+      &copy 2015 Erick Gist
+    </footer>
+
 </body>
 </html>
