@@ -112,6 +112,7 @@ footer ul {
   padding-left: 0px;
   list-style-type: none;
 }
+
 #copyright {
   text-align: center;
   font-family: 'Play', sans-serif ;
@@ -120,6 +121,7 @@ footer ul {
   text-align: center;
   font-family: 'Play', sans-serif;
 }
+
 #links a:visited {
   color: #CC0033;
 }
