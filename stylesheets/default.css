@@ -222,7 +222,7 @@ footer ul {
   }
 
   #links {
-    text-align: right;
+    text-align: left;
     font-family: 'Play', sans-serif;
   }
   #links a:link {
