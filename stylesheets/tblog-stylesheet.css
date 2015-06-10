@@ -138,6 +138,9 @@ em {
   text-align: center;
   color: #CC0033;
 }
+#links li {
+  height: 20px;
+}
 #links img {
   width:20px;
   height: 20px;
