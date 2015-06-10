@@ -135,6 +135,7 @@ em {
  font-family: 'Josefin Slab';
 }
 #links a:visited {
+  text-align: center;
   color: #CC0033;
 }
 #links img {
