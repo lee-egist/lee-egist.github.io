@@ -83,7 +83,7 @@ li {
 #aside ul {
   padding-left: 0px;
 }
-  blockquote{
+  code{
     font-family: 'Josefin Slab';
     font-size: 1.5em;
     color: #A30000;
@@ -146,7 +146,7 @@ em {
 /******************************************************************************************************************************************************************************************/
   @media only screen and (min-width: 500px) {
 
-  blockquote{
+  code{
     font-family: 'Josefin Slab';
     font-size: 1.5em;
     color: #A30000;
