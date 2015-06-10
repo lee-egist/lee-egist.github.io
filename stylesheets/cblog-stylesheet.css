@@ -125,6 +125,7 @@ li {
   }
   section {
       background-image: url("../images/transyinyang.png");
+      background-size: auto;
       background-position: center;
       background-repeat:no-repeat;
 
