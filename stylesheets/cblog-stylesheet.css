@@ -338,4 +338,8 @@ em {
   .hiddenSmall {
     display: none;
   }
+
+    footer ul li {
+    display: inline;
+  }
 }
