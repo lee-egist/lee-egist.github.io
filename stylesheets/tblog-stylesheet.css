@@ -148,7 +148,7 @@ em {
 }
 
 #tw {
-  background-color: white;
+  background-color: white !important;
   border-radius: 3px;
 }
 
