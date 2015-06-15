@@ -31,6 +31,7 @@
         <li><a href="tech/t2-css-design.html">Css Design</a></li>
         <li><a href="tech/t3-arrays-hashes.html">Arrays & hashes</a><li>
         <li><a href="tech/t4-enumerable-methods.html">Enumerable#map</a></li>
+        <li><a href="t5-ruby-class.html">Modeling a motorcycle</a></li>
         <li><a href="tech/tx-youtube_dl.html">Youtube Gold</a></li>
         <li>Culture:<li>
         <li><a href="cult/c1-chefs-kitchen.html">Chefs Kitchen</a></li>
@@ -103,13 +104,30 @@
             <a href="./tech/t4-enumerable-methods.html">Read more...</a>
     </article>
     </td></tr>
-        <tr><td>
+    <tr><td>
+      <article class="preview">
+      <h1>Designing for Accessibility</h1>
+      <h4>Wednesday June 10, 2015</h4>
+        <p>First off let me say that this subject doesn't get nearly enough attention. I hold no false hopes that this post will inspire designer, developers, and would be technoligist, to take up arms and fight for this cause. This is truly and absolutely a social issue. </p>
+          <p>As an American society we put less value on the lives of the less able. So it's no superise that the technology we create puts the disabled at a further and further disadvantage. This post is not for society at large and to be honest if you don't believe that there is a problem then nothing you read will ever change your mind. However for those of you who have seen the disadvantage and divide, for you would be designer and technologist, I have a story for you.</p>
+        <a href="./cult/c4-tech-issues.html">Read more...</a>
+    </article>
+  </td></tr>
+  <tr><td>
     <article class="preview">
-    <h1>Designing for Accessibility</h1>
-    <h4>Wednesday June 10, 2015</h4>
-      <p>First off let me say that this subject doesn't get nearly enough attention. I hold no false hopes that this post will inspire designer, developers, and would be technoligist, to take up arms and fight for this cause. This is truly and absolutely a social issue. </p>
-        <p>As an American society we put less value on the lives of the less able. So it's no superise that the technology we create puts the disabled at a further and further disadvantage. This post is not for society at large and to be honest if you don't believe that there is a problem then nothing you read will ever change your mind. However for those of you who have seen the disadvantage and divide, for you would be designer and technologist, I have a story for you.</p>
-            <a href="./cult/c4-tech-issues.html">Read more...</a>
+    <h1>M0deling a motorcycle</h1>
+    <h4>Monday Jun 15, 2015</h4>
+        <p> Classes in programming represent real world objects. the best place to use a class is when you anticipate repeatedly make a certain object. For example lets image that we want to create a program which creates motorcycle. Assuming that our program already has knowledge of a vehicle class, which covers having wheels and steering and traveling we can focus on the particulars of a motorcycle.
+          our class may look something like this:</p>
+          <pre> class Motorcycle
+
+  def initialize(brand, cc, positions)
+
+    unless ["Yamaha", "Honda", "Suzuki", "Kawasaki"].include?(brand)
+      raise ArgumentError.new("#{brand} is not a Japanese Motorcycle manufacturer")
+    end
+  </pre>
+            <a href="./tech/t5-ruby-classes.html">Read more...</a>
     </article>
   </td></tr>
     <tr><td>
