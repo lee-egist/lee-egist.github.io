@@ -30,6 +30,7 @@ h1, h2, h3, h4{
 }
 
 p, ol {
+  text-shadow: 1px 1px black;
   font-family: 'Josefin Slab';
   font-size: 1.5em;
   color: #4F5F7A;

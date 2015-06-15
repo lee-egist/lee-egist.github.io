@@ -143,6 +143,14 @@ footer ul {
   border-radius: 3px;
 }
 
+#bio{
+  color: black;
+/*  text-shadow: 1px 1px white;*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 /******************************************************************************
 ******************************************************************************/
 
