@@ -147,7 +147,22 @@ em {
   background-color: white;
   border-radius: 3px;
 }
-
+header {
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  height: 300px;
+  text-align: bottom;
+}
+nav{
+  position: relative !important;
+  top:90%;
+}
+nav li{
+  color:white;
+  font-size: 1.5em;
+}
 /******************************************************************************************************************************************************************************************/
   @media only screen and (min-width: 500px) {
 
