@@ -129,12 +129,14 @@
                             <h4>Monday Jun 15, 2015</h4>
                             <p> Classes in programming represent real world objects. the best place to use a class is when you anticipate repeatedly make a certain object. For example lets image that we want to create a program which creates motorcycle. Assuming that our program already has knowledge of a vehicle class, which covers having wheels and steering and traveling we can focus on the particulars of a motorcycle.
                               our class may look something like this:</p>
-                              <pre> class Motorcycle
+                              <pre>
+                                class Motorcycle
                                   def initialize(brand, cc, positions)
                                   unless ["Yamaha", "Honda", "Suzuki", "Kawasaki"].include?(brand)
                                   raise ArgumentError.new("#{brand} is not a Japanese
                                   Motorcycle manufacturer")
                                   end
+                                end
                               </pre>
                               <a href="./tech/t5-ruby-classes.html">Read more...</a>
                             </article>
