@@ -18,7 +18,7 @@
     <ul>
       <li><a href="https://lee-egist.github.io/contact.html">About me</a></li>
       <li>Dev Tech</li>
-      <li><a href="../cult/c6-stereotype-threat.html">Dev Culture</a></li>
+      <li><a href="../cult/c3-thinking-style.html">Dev Culture</a></li>
     </ul>
   </nav>
   </header>
@@ -39,29 +39,22 @@
       <table id="main">
         <tr><td>
     <article class="preview">
-      <h1>I wish I had a map</h1>
-      <p>sometimes in code you want to do a task repeatedly to a set object and get something different then what was put in. For example say we had an application that sent out thank you emails to all our feed subscriber. Now imagine the case where you have an extremely popular feed. It would probably take you days if not weeks to send all those emails, not to mention if you wanted to customize those message even just a little bit. The solution to this kind of problem is map. Map allows you to run a block of code repeatedly on an object usually an array. Those of you who have used ruby before will undoubtly inquiry on the difference between map vs each. While at the surface it may seem like map and each do the same thing, there is a subtle but important difference. using map returns the contents of the object it is called on changing the objects in place, while each only return the same object it was called on.
-        <pre>
-          <code>
-            names = ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
-            names.map { |name| name.captilize }
-          </code>
-        </pre>
-        the output will be: <samp>["John", "Sally", "Jim", "David", "Carrie", "Oscar", "Rachel"]</samp><br>
-        however:<br>
-        <pre>
-          <code>
-            names = ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
-            names.each { |name| name.captilize }
-          </code>
-        </pre>
-        will output: <samp>["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]</samp>
-
-      </p>
+      <h1>lambda, lambda lambda</h1>
+        <h4>Tuesday June 23, 2015</h4>
+        #### Option 4: Blocs, Procs, and Lambdas
+<p>What are these? How do they work? Procs and Lambdas are very rarely used at your stage of learning, but they are good to learn about. You should try to be comfortable with blocs by the end of Phase 0.</p>
     </article>
   </td></tr>
     </table>
     </section>
+      <nav id="pager" class="hiddenSmall">
+      <h1 class="hiddenElem">pager</h1>
+      <a href="t1-git-blog.html">1</a>
+      <a href="t2-css-design.html">2</a> |
+      <a href="t3-arrays-hashes.html">3</a> |
+      <a href="t4-enumerable-methods.html">4</a> |
+      <a href="tx-youtube_dl.html">5</a>
+    </nav>
     <hr>
 <footer>
       <h2 class="hiddenElem" >footer</h2>
