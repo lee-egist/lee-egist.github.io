@@ -135,6 +135,7 @@ li {
 em {
  font-weight: bold;
  font-family: 'Josefin Slab';
+ color: red;
 }
 #links a:visited {
   color: #CC0033;
@@ -163,9 +164,7 @@ nav li{
   color:white;
   font-size: 1.5em;
 }
-em {
-  color: red;
-}
+
 /******************************************************************************************************************************************************************************************/
   @media only screen and (min-width: 500px) {
 
