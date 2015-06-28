@@ -126,6 +126,7 @@ li {
   }
   section {
       background-image: url("../images/aristotle.png");
+      background-size: auto;
       background-position: center;
       background-repeat:no-repeat;
 
@@ -138,28 +139,28 @@ em {
 }
 
 #links a:visited {
-  text-align: center;
+  /*text-align: center;*/
   color: #CC0033;
 }
-#links li {
+/*#links li {
   height: 20px;
 }
 #links img {
 
   border-radius: 3px;
 }
-
+*/
 #tw {
   background-color: white !important;
   border-radius: 3px;
 }
 header {
   background-image: url("../images/banner.png");
-  background-size: contain;
+  background-size: cover;
   position: relative;
   background-position: center;
   height: 300px;
-  text-align: bottom
+  text-align: bottom;
 }
 nav{
   position: relative !important;
@@ -176,7 +177,7 @@ nav li {
 /******************************************************************************************************************************************************************************************/
   @media only screen and (min-width: 500px) {
 
-  code{
+  code, pre{
     font-family: 'Josefin Slab';
     font-size: 1.5em;
     color: #A30000;
