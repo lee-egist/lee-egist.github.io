@@ -157,7 +157,6 @@ em {
 header {
   background-image: url("../images/banner.png");
   background-size: cover;
-  position: relative;
   background-position: center;
   height: 300px;
   text-align: bottom;
