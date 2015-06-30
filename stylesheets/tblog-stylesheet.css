@@ -271,7 +271,6 @@ color: green;
     position: relative;
     left:2.5%;
     width: 75%;
-    border-right: 1px dotted #A30000;
   }
   article{
     margin-right: auto;
@@ -281,7 +280,6 @@ color: green;
     width:80%;
     padding-left: 2.5em;
     border-bottom: 1px dotted #A30000;
-    border-right: 1px dotted #A30000;
     box-shadow: 5px 5px 5px #BA2309;
   }
   article p {
