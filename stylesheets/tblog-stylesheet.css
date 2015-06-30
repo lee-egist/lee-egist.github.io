@@ -23,10 +23,13 @@
   position:relative;
   padding: 2.5%;
  }
+ a:link{
+   color: inherit;
+ }
+ a:visited{
+   color: #30D3FF;
+ }
 
-p a{
-  font-size: 0.5em;
-}
 h1, h2, h3, h4{
   font-family: 'IM Fell English', serif;
   color: #B2A485;
@@ -43,11 +46,10 @@ p, ol {
 #bullets {
   padding-left: 2.5%;
 }
-  nav a:link, nav a:visited{
-  font-family: 'Exo', sans-serif;
-  color: orange;
+nav a:link, nav a:visited{
+font-family: 'Exo', sans-serif;
+color: orange;
 }
-
   #bullets > li{
   list-style-type: circle;
   font-size: 1.5em;
@@ -66,11 +68,10 @@ p, ol {
   visibility: hidden;
 }
 
-  li a{
-  text-decoration: none;
-  font-family: 'Exo';
+li a{
+text-decoration: none;
+font-family: 'Exo';
 }
-
 
 li {
   margin-left: 0px;
@@ -100,12 +101,6 @@ li {
     padding-left: 0px;
   }
 
-  article a{
-
-    font-family:  'Lora', serif;
-    font-size: 1.5em;
-    padding-bottom: 1em;
-  }
   #smalla{
     font-family:  'Lora', serif;
     font-size: 1em;
@@ -124,9 +119,6 @@ li {
     padding-left: 0px;
   }
 
-  .preview a:link, .preview a:visited{
-    color:#A30000;
-  }
   section {
       background-image: url("../images/aristotle.png");
       background-size: auto;
@@ -141,18 +133,6 @@ em {
  color: red;
 }
 
-#links a:visited {
-  /*text-align: center;*/
-  color: #CC0033;
-}
-/*#links li {
-  height: 20px;
-}
-#links img {
-
-  border-radius: 3px;
-}
-*/
 #tw {
   background-color: white !important;
   border-radius: 3px;
@@ -213,22 +193,6 @@ color: green;
     position: relative;
   }
 
-  nav a:link{
-    font-family: 'Exo', sans-serif;
-    color: #403D36;
-  }
-
-  nav a:hover {
-    font-family: 'Exo', sans-serif;
-    color: #97D8FF;
-  }
-  a:hover {
-    color: #97D8FF;
-  }
-  /*a:active {
-    visibility: hidden;
-  }*/
-
   nav li {
     display: inline;
   }
@@ -238,11 +202,6 @@ color: green;
     padding-left: 2.75em;
     padding-right: 2.75em;
   }
-
-/*  body {
-    background-color: #FFF0E2;
-    position:relative;
-  }*/
 
   .postMedia {
     float :right;
@@ -259,10 +218,6 @@ color: green;
   .textImg a:link, #pager a:link {
     text-decoration: none;
     font-family: 'Lora', serif;
-  }
-
-  .textImg a:hover {
-    color: gray;
   }
 
   footer, #pager{
@@ -310,14 +265,6 @@ color: green;
     list-style-type: none;
   }
 
-  #aside li a:link, #aside li a:visited {
-    color:white;
-  }
-
-  #aside li a:hover, #aside li a:active {
-    color:black;
-  }
-
   section {
     position: relative;
     height: 700px;
@@ -344,10 +291,7 @@ color: green;
     margin-right: 35px;
   }
 
-  li a{
-    text-decoration: none;
-    font-family: 'Exo';
-  }
+
 
   li {
     margin-left: 0px;
