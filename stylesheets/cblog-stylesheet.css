@@ -269,8 +269,9 @@ nav li{
     position: relative;
     left:2.5%;
     width: 75%;
+    border-right: 1px dotted #A30000;
   }
-  
+
   article{
     margin-right: auto;
     margin-left: auto;

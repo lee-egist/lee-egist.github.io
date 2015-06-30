@@ -265,6 +265,7 @@ color: green;
     height: 700px;
     overflow: scroll;
     width: auto;
+    border-right: 1px dotted #A30000;
   }
 
   section #main {
