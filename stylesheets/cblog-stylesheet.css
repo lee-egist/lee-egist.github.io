@@ -263,7 +263,6 @@ nav li{
     position: relative;
     height: 700px;
     overflow: scroll;
-    overflow-x: visible;
   }
   section #main {
     position: relative;
