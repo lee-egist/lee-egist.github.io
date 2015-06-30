@@ -24,6 +24,9 @@
   padding: 2.5%;
  }
 
+a{
+  font-size: 1em;
+}
 h1, h2, h3, h4{
   font-family: 'IM Fell English', serif;
   color: #B2A485;
