@@ -277,8 +277,7 @@ color: green;
     margin-left: auto;
     position: relative;
     float: left;
-    width:80%;
-    padding-left: 2.5em;
+    width:auto;
     border-bottom: 1px dotted #A30000;
   }
   article p {
