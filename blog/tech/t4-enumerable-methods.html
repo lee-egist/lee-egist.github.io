@@ -43,23 +43,23 @@
     <article class="preview">
       <h1>I wish I had a map</h1>
       <p>sometimes in code you want to do a task repeatedly to a set object and get something different then what was put in. For example say we had an application that sent out thank you emails to all our feed subscriber. Now imagine the case where you have an extremely popular feed. It would probably take you days if not weeks to send all those emails, not to mention if you wanted to customize those message even just a little bit. The solution to this kind of problem is map. Map allows you to run a block of code repeatedly on an object usually an array. Those of you who have used ruby before will undoubtly inquiry on the difference between map vs each. While at the surface it may seem like map and each do the same thing, there is a subtle but important difference. using map returns the contents of the object it is called on changing the objects in place, while each only return the same object it was called on.</p>
-      <pre>
-        names = ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
-        names.map { |name| name.captilize }
-      </pre>
+<pre>
+names = ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
+names.map { |name| name.captilize }
+</pre>
       <p>the output will be:</p>
-      <pre>
-          ["John", "Sally", "Jim", "David", "Carrie", "Oscar", "Rachel"] </pre>
+<pre>
+["John", "Sally", "Jim", "David", "Carrie", "Oscar", "Rachel"]
+</pre>
         <p>however:</p>
-        <pre>
-          names = ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
-          names.each { |name| name.captilize }
-        </pre>
+<pre>
+names = ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
+names.each { |name| name.captilize }
+</pre>
         <p>will output:</p>
-        <pre>
-          ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
-        </pre>
-
+<pre>
+["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
+</pre>
     </article>
   </td></tr>
     </table>
