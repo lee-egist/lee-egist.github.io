@@ -74,7 +74,6 @@ p, ol {
   font-family: 'Exo';
 }
 
-
 li {
   margin-left: 0px;
   margin: 1em;
@@ -90,7 +89,7 @@ li {
 #aside ul {
   padding-left: 0px;
 }
-  code, pre{
+  code{
     font-family: 'Josefin Slab';
     font-size: 1.5em;
     color: #A30000;
@@ -122,6 +121,7 @@ li {
       background-size: auto;
       background-position: center;
       background-repeat:no-repeat;
+      width: auto;
 
   }
 

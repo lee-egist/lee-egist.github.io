@@ -47,10 +47,11 @@ p, ol {
   padding-left: 2.5%;
 }
 nav a:link, nav a:visited{
-font-family: 'Exo', sans-serif;
-color: orange;
+  font-family: 'Exo', sans-serif;
+  color: orange;
 }
-  #bullets > li{
+
+#bullets > li{
   list-style-type: circle;
   font-size: 1.5em;
   border: 1px solid black;
