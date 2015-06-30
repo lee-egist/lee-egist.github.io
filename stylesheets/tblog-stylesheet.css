@@ -166,9 +166,9 @@ color: green;
 /******************************************************************************************************************************************************************************************/
   @media only screen and (min-width: 500px) {
 
-  code, pre{
+  pre{
     font-family: 'Josefin Slab';
-    font-size: 1.5em;
+    font-size: 1.25 em;
     color: #A30000;
     font-weight: bold;
   }
