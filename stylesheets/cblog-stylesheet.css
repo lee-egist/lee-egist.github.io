@@ -70,7 +70,7 @@
 
 }
 /*tablet*/
-@media only screen and (min-width:401px) and (max-width: 1000px) {
+@media only screen and (min-width:461px) and (max-width: 1000px) {
 
   body{
     font-size: 1.25em;
@@ -89,7 +89,7 @@
 
 }
 /*cellphone*/
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 460px) {
 
   body{
     font-size:1em;
