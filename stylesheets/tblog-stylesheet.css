@@ -180,8 +180,8 @@ nav a{
   color: orange;
 }
 nav li{
-  padding-left: .25em;
-  padding-right: .25em;
+  padding-left: .5em;
+  padding-right: .5em;
   font-family: 'Exo', sans-serif;
   color:black;
 }
