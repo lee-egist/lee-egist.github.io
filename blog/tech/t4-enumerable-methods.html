@@ -8,81 +8,67 @@
   <meta charset="UTF-8">
 
   <link href='http://fonts.googleapis.com/css?family=Lora|Josefin+Slab:400italic|Exo|IM+Fell+English:400italic' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/gif" href="../favicon.gif">
 </head>
 <body>
   <header>
-  <nav>
-    <h1 class="hiddenElem">navigation</h1>
-    <ul>
-      <li><a href="https://lee-egist.github.io/blog">Blog Home</a></li>
-      <li><a href="https://lee-egist.github.io/contact.html">About me</a></li>
-      <li>Dev Tech</li>
-      <li><a href="../cult/c7-values.html">Dev Culture</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="https://lee-egist.github.io/blog">Blog Home</a></li>
+        <li><a href="https://lee-egist.github.io/contact.html">About me</a></li>
+        <li>Dev Tech</li>
+        <li><a href="../cult/c7-values.html">Dev Culture</a></li>
+      </ul>
+    </nav>
   </header>
   <hr>
-    <section>
-      <h1 class="hiddenElem">aside</h1>
-      <div id="aside">
+  <section>
+    <div id="aside">
+      <ul>
+        <li><a href="t1-git-blog.html">Git & Github</a></li>
+        <li><a href="t2-css-design.html">Css Design</a></li>
+        <li><a href="t3-arrays-hashes.html">Arrays & hashes</a></li>
+        <li><a href="t4-enumerable-methods.html">Enumerable#map</a></li>
+        <li><a href="t5-ruby-classes.html">Modeling a motorcycle</a></li>
+        <li><a href="t6-oop-concepts.html">lambda, lambda lambda</a></li>
+        <li><a href="t7-JavaScript.html">Javascript Init</a></li>
+        <li><a href="tx-youtube_dl.html">Youtube Gold</a></li>
+        <li><a href="Atom-and-things.html">Atom and things</a></li>
+      </ul>
+        </div>
+        <article class="preview">
+          <h1>I wish I had a map</h1>
+          <p>sometimes in code you want to do a task repeatedly to a set object and get something different then what was put in. For example say we had an application that sent out thank you emails to all our feed subscriber. Now imagine the case where you have an extremely popular feed. It would probably take you days if not weeks to send all those emails, not to mention if you wanted to customize those message even just a little bit. The solution to this kind of problem is map. Map allows you to run a block of code repeatedly on an object usually an array. Those of you who have used ruby before will undoubtly inquiry on the difference between map vs each. While at the surface it may seem like map and each do the same thing, there is a subtle but important difference. using map returns the contents of the object it is called on changing the objects in place, while each only return the same object it was called on.</p>
+          <blockquote>
+            names = ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]<br>
+            names.map { |name| name.captilize }<br>
+          </blockquote>
+          <p>the output will be:</p>
+          <blockquote>
+            ["John", "Sally", "Jim", "David", "Carrie", "Oscar", "Rachel"]
+          </blockquote>
+          <p>however:</p>
+          <blockquote>
+            names = ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]<br>
+            names.each { |name| name.captilize }
+          </blockquote>
+          <p>will output:</p>
+          <blockquote>
+            ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
+          </blockquote>
+        </article>
+      </section>
+      <footer>
+        <hr>
         <ul>
-          <li><a href="t1-git-blog.html">Git & Github</a></li>
-          <li><a href="t2-css-design.html">Css Design</a></li>
-          <li><a href="t3-arrays-hashes.html">Arrays & hashes</a></li>
-          <li><a href="t4-enumerable-methods.html">Enumerable#map</a><li>
-          <li><a href="t5-ruby-classes.html">Modeling a motorcycle</a></li>
-          <li><a href="t6-oop-concepts.html">lambda, lambda lambda</a></li>
-          <li><a href="t7-JavaScript.html">Javascript Init</a></li>
-          <li><a href="tx-youtube_dl.html">Youtube Gold</a><li>
-          <li><a href="Atom-and-things.html">Atom and things</a></li>
+          <li><a href="https://www.facebook.com/leegiste2"><img src="../../images/fb.png" alt="facebooklink"></a></li>
+          <li><a href="https://twitter.com/lee2gist"><img src="../../images/Tw.png" alt="twitter link"></a></li>
+          <li><a href="https://www.linkedin.com/pub/erick-gist/b4/b2b/398"><img src="../../images/Ln.png" alt="linkedin link"></a></li>
+          <li><a href="http://www.quora.com/Erick-Gist"><img src="../../images/quora.png" alt="Quora icon" alt="quora link"></a></li>
+          <li><a href="https://github.com/lee-egist"><img src="../../images/github.png" alt="github icon" alt="github link"></a></li>
         </ul>
-      </div>
-      <table id="main">
-        <tr><td>
-    <article class="preview">
-      <h1>I wish I had a map</h1>
-      <p>sometimes in code you want to do a task repeatedly to a set object and get something different then what was put in. For example say we had an application that sent out thank you emails to all our feed subscriber. Now imagine the case where you have an extremely popular feed. It would probably take you days if not weeks to send all those emails, not to mention if you wanted to customize those message even just a little bit. The solution to this kind of problem is map. Map allows you to run a block of code repeatedly on an object usually an array. Those of you who have used ruby before will undoubtly inquiry on the difference between map vs each. While at the surface it may seem like map and each do the same thing, there is a subtle but important difference. using map returns the contents of the object it is called on changing the objects in place, while each only return the same object it was called on.</p>
-<pre>
-names = ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
-names.map { |name| name.captilize }
-</pre>
-      <p>the output will be:</p>
-<pre>
-["John", "Sally", "Jim", "David", "Carrie", "Oscar", "Rachel"]
-</pre>
-        <p>however:</p>
-<pre>
-names = ["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
-names.each { |name| name.captilize }
-</pre>
-        <p>will output:</p>
-<pre>
-["John", "sally", "jim", "david", "Carrie", "oscar", "Rachel"]
-</pre>
-    </article>
-  </td></tr>
-    </table>
-    </section>
-    <hr>
-<footer>
-      <h2 class="hiddenElem" >footer</h2>
-      <table>
-        <tr>
-          <td id="links">
-            <ul>
-              <li><a href="https://www.facebook.com/leegiste2"><img src="../../images/fb.png" alt="facebooklink"></a></li>
-              <li><a href="https://twitter.com/lee2gist"><img src="../../images/Tw.png" alt="twitter link"></a></li>
-              <li><a href="https://www.linkedin.com/pub/erick-gist/b4/b2b/398"><img src="../../images/Ln.png" alt="linkedin link"></a></li>
-              <li><a href="http://www.quora.com/Erick-Gist"><img src="../../images/quora.png" alt="Quora icon" alt="quora link"></a></li>
-              <li><a href="https://github.com/lee-egist"><img src="../../images/github.png" alt="github icon" alt="github link"></a></li>
-            </ul>
-          </td>
-          <td id="copyright"><p>&copy; 2015 Erick Gist</p>
-          </td>
-        </tr>
-      </table>
-    </footer>
-</body>
-</html>
+        <p>&copy; 2015 Erick Gist</p>
+      </footer>
+    </body>
+  </html>

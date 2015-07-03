@@ -8,103 +8,89 @@
   <meta charset="UTF-8">
 
   <link href='http://fonts.googleapis.com/css?family=Lora|Josefin+Slab:400italic|Exo|IM+Fell+English:400italic' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/gif" href="../favicon.gif">
 </head>
 <body>
   <header>
-  <nav>
-    <h1 class="hiddenElem">navigation</h1>
-    <ul>
-      <li><a href="https://lee-egist.github.io/blog">Blog Home</a></li>
-      <li><a href="https://lee-egist.github.io/contact.html">About me</a></li>
-      <li>Dev Tech</li>
-      <li><a href="../cult/c7-values.html">Dev Culture</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="https://lee-egist.github.io/blog">Blog Home</a></li>
+        <li><a href="https://lee-egist.github.io/contact.html">About me</a></li>
+        <li>Dev Tech</li>
+        <li><a href="../cult/c7-values.html">Dev Culture</a></li>
+      </ul>
+    </nav>
   </header>
   <hr>
-    <section>
-      <h1 class="hiddenElem">aside</h1>
-      <div id="aside">
-        <ul>
-          <li><a href="t1-git-blog.html">Git & Github</a></li>
-          <li><a href="t2-css-design.html">Css Design</a></li>
-          <li><a href="t3-arrays-hashes.html">Arrays & hashes</a></li>
-          <li><a href="t4-enumerable-methods.html">Enumerable#map</a><li>
-          <li><a href="t5-ruby-classes.html">Modeling a motorcycle</a></li>
-          <li><a href="t6-oop-concepts.html">lambda, lambda lambda</a></li>
-          <li><a href="t7-JavaScript.html">Javascript Init</a></li>
-          <li><a href="tx-youtube_dl.html">Youtube Gold</a><li>
-          <li><a href="Atom-and-things.html">Atom and things</a></li>
-        </ul>
-      </div>
-      <table id="main">
-        <tr><td>
-    <article class="preview">
-      <h1>Model a motorcycle</h1>
-        <h4>Monday Jun 15, 2015</h4>
-        <p> Classes in programming represent real world objects. the best place to use a class is when you anticipate repeatedly make a certain object. For example lets image that we want to create a program which creates motorcycle. Assuming that our program already has knowledge of a vehicle class, which covers having wheels and steering and traveling we can focus on the particulars of a motorcycle.
-          our class may look something like this:</p>
-<pre>
-  class Motorcycle
-
-  def initialize(brand, cc, positions)
-
-    unless ["Yamaha", "Honda", "Suzuki", "Kawasaki"].include?(brand)
-      raise ArgumentError.new("#{brand} is not a Japanese Motorcycle manufacturer")
-    end
-
-    unless cc.to_i.between?(50, 2300)
-      raise ArgumentError.new("#{cc} is not within the range of motorcycle engine size")
-    end
-
-    unless ["upright", "sport", "cruiser"].include?(positions)
-      raise ArgumentError.new("#{positions} is not a riding style")
-    end
-
-    @brand = brand
-    @engine = cc
-    @style = positions
-  end
-
-  def info
-    if @cc > 600
-    puts "The motorcycle is a #{@brand}, #{@engine}cc #{@style}. It sounds fast!"
-    else
-    puts "The motorcycle is a #{@brand}, #{@engine}cc #{@style}. you must be a beginner."
-  end
-
-end
-
-my_bike = Motorcycle.new("Yamaha", "850", "upright")
-my_bike.info
-</pre>
-<p>
-  Although this class current only implentents 2 methods you can theoritically create an infinite number of methods that corrispond to a motorcycle like color or wheel base, if it has saddlebags, etc.. and these methods will be avaliable for every object of class Motorcycle.
-        </p>
-    </article>
-  </td></tr>
-    </table>
-    </section>
-    <hr>
-<footer>
-      <h2 class="hiddenElem" >footer</h2>
-      <table>
-        <tr>
-          <td id="links">
-            <ul>
-              <li><a href="https://www.facebook.com/leegiste2"><img src="../../images/fb.png" alt="facebooklink"></a></li>
-              <li><a href="https://twitter.com/lee2gist"><img src="../../images/Tw.png" alt="twitter link"></a></li>
-              <li><a href="https://www.linkedin.com/pub/erick-gist/b4/b2b/398"><img src="../../images/Ln.png" alt="linkedin link"></a></li>
-              <li><a href="http://www.quora.com/Erick-Gist"><img src="../../images/quora.png" alt="Quora icon" alt="quora link"></a></li>
-              <li><a href="https://github.com/lee-egist"><img src="../../images/github.png" alt="github icon" alt="github link"></a></li>
-            </ul>
-          </td>
-          <td id="copyright"><p>&copy; 2015 Erick Gist</p>
-          </td>
-        </tr>
-      </table>
-    </footer>
-</body>
-</html>
+  <section>
+    <div id="aside">
+      <ul>
+        <li><a href="t1-git-blog.html">Git & Github</a></li>
+        <li><a href="t2-css-design.html">Css Design</a></li>
+        <li><a href="t3-arrays-hashes.html">Arrays & hashes</a></li>
+        <li><a href="t4-enumerable-methods.html">Enumerable#map</a></li>
+        <li><a href="t5-ruby-classes.html">Modeling a motorcycle</a></li>
+        <li><a href="t6-oop-concepts.html">lambda, lambda lambda</a></li>
+        <li><a href="t7-JavaScript.html">Javascript Init</a></li>
+        <li><a href="tx-youtube_dl.html">Youtube Gold</a></li>
+        <li><a href="Atom-and-things.html">Atom and things</a></li>
+      </ul>
+        </div>
+        <article class="preview">
+          <h1>Model a motorcycle</h1>
+          <h4>Monday Jun 15, 2015</h4>
+          <p> Classes in programming represent real world objects. the best place to use a class is when you anticipate repeatedly make a certain object. For example lets image that we want to create a program which creates motorcycle. Assuming that our program already has knowledge of a vehicle class, which covers having wheels and steering and traveling we can focus on the particulars of a motorcycle.
+            our class may look something like this:</p>
+            <blockquote>
+              class Motorcycle<br>
+              <br>
+              def initialize(brand, cc, positions)<br>
+              <br>
+              unless ["Yamaha", "Honda", "Suzuki", "Kawasaki"].include?(brand)<br>
+              raise ArgumentError.new("#{brand} is not a Japanese Motorcycle manufacturer")<br>
+              end<br>
+              <br>
+              unless cc.to_i.between?(50, 2300)<br>
+              raise ArgumentError.new("#{cc} is not within the range of motorcycle engine size")<br>
+              end<br>
+              <br>
+              unless ["upright", "sport", "cruiser"].include?(positions)<br>
+              raise ArgumentError.new("#{positions} is not a riding style")<br>
+              end<br>
+              <br>
+              @brand = brand<br>
+              @engine = cc<br>
+              @style = positions<br>
+              end<br>
+              <br>
+              def info<br>
+              if @cc > 600<br>
+              puts "The motorcycle is a #{@brand}, #{@engine}cc #{@style}. It sounds fast!"<br>
+              else<br>
+              puts "The motorcycle is a #{@brand}, #{@engine}cc #{@style}. you must be a beginner."<br>
+              end<br>
+              <br>
+              end<br>
+              <br>
+              my_bike = Motorcycle.new("Yamaha", "850", "upright")<br>
+              my_bike.info<br>
+            </blockquote>
+            <p>
+              Although this class current only implentents 2 methods you can theoritically create an infinite number of methods that corrispond to a motorcycle like color or wheel base, if it has saddlebags, etc.. and these methods will be avaliable for every object of class Motorcycle.
+            </p>
+          </article>
+        </section>
+        <footer>
+          <hr>
+          <ul>
+            <li><a href="https://www.facebook.com/leegiste2"><img src="../../images/fb.png" alt="facebooklink"></a></li>
+            <li><a href="https://twitter.com/lee2gist"><img src="../../images/Tw.png" alt="twitter link"></a></li>
+            <li><a href="https://www.linkedin.com/pub/erick-gist/b4/b2b/398"><img src="../../images/Ln.png" alt="linkedin link"></a></li>
+            <li><a href="http://www.quora.com/Erick-Gist"><img src="../../images/quora.png" alt="Quora icon" alt="quora link"></a></li>
+            <li><a href="https://github.com/lee-egist"><img src="../../images/github.png" alt="github icon" alt="github link"></a></li>
+          </ul>
+          <p>&copy; 2015 Erick Gist</p>
+        </footer>
+      </body>
+      </html>

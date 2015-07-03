@@ -8,100 +8,74 @@
   <meta charset="UTF-8">
 
   <link href='http://fonts.googleapis.com/css?family=Lora|Josefin+Slab:400italic|Exo|IM+Fell+English:400italic' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/gif" href="../favicon.gif">
 </head>
 <body>
   <header>
-  <nav>
-    <h1 class="hiddenElem">navigation</h1>
-    <ul>
-      <li><a href="https://lee-egist.github.io/blog">Blog Home</a></li>
-      <li><a href="https://lee-egist.github.io/contact.html">About me</a></li>
-      <li>Dev Tech</li>
-      <li><a href="../cult/c7-values.html">Dev Culture</a></li>
-    </ul>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="https://lee-egist.github.io/blog">Blog Home</a></li>
+        <li><a href="https://lee-egist.github.io/contact.html">About me</a></li>
+        <li>Dev Tech</li>
+        <li><a href="../cult/c7-values.html">Dev Culture</a></li>
+      </ul>
+    </nav>
   </header>
   <hr>
-    <section>
-      <h1 class="hiddenElem">aside</h1>
-      <div id="aside">
-        <ul>
-          <li><a href="t1-git-blog.html">Git & Github</a></li>
-          <li><a href="t2-css-design.html">Css Design</a></li>
-          <li><a href="t3-arrays-hashes.html">Arrays & hashes</a></li>
-          <li><a href="t4-enumerable-methods.html">Enumerable#map</a><li>
-          <li><a href="t5-ruby-classes.html">Modeling a motorcycle</a></li>
-          <li><a href="t6-oop-concepts.html">lambda, lambda lambda</a></li>
-          <li><a href="t7-JavaScript.html">Javascript Init</a></li>
-          <li><a href="tx-youtube_dl.html">Youtube Gold</a><li>
-          <li><a href="Atom-and-things.html">Atom and things</a></li>
-        </ul>
-      </div>
-      <table id="main">
-        <tr><td>
-    <article class="preview">
-      <h1>Lambda, Lambda, Lambda</h1>
-        <h4>Tuesday June 23, 2015</h4>
+  <section>
+    <div id="aside">
+      <ul>
+        <li><a href="t1-git-blog.html">Git & Github</a></li>
+        <li><a href="t2-css-design.html">Css Design</a></li>
+        <li><a href="t3-arrays-hashes.html">Arrays & hashes</a></li>
+        <li><a href="t4-enumerable-methods.html">Enumerable#map</a></li>
+        <li><a href="t5-ruby-classes.html">Modeling a motorcycle</a></li>
+        <li><a href="t6-oop-concepts.html">lambda, lambda lambda</a></li>
+        <li><a href="t7-JavaScript.html">Javascript Init</a></li>
+        <li><a href="tx-youtube_dl.html">Youtube Gold</a></li>
+        <li><a href="Atom-and-things.html">Atom and things</a></li>
+      </ul>
+        </div>
+        <article class="preview">
+          <h1>Lambda, Lambda, Lambda</h1>
+          <h4>Tuesday June 23, 2015</h4>
           <p>Desipte the title, this post is not about the movie Revenge of the nerds, it's not about Half-life and it has almost nothing to do with the 11th letter in the greek alphabet with numerical value is 30 for those things google has you covered. This is about the programming object Lambda. A lambda is a Proc, and a Proc is a Block but even though one thing is another it doesn't mean they are all the same thing.</p>
 
-  <h3>The Block</h3>
-  <p>
-    A Block is an arbitrary set of operations
-  </p>
-    <table>
-      <tr>
-        <td>
-          <img class="code" src="../../images/block1.png">
-        </td>
-        <td>
-          <img class="code" src="../../images/block2.png">
-        </td>
-      </tr>
-    </table>
-  <p>
-    bothe are examples of block syntax
-  </p>
-  <h3> The Proc </h3>
-  <p>
-    A Proc is a Procedure, an Object in ruby, that you pass a block into.
-  </p>
-      <table>
-      <tr>
-        <td>
-          <img class="code" src="../../images/proc1.png">
-        </td>
-        <td>
-          <img class="code" src="../../images/proc2.png">
-        </td>
-      </tr>
-    </table>
-    <p>
-      The biggest difference between a Block and and Proc is that a block is not as a local variable and therefor cannot be pasted into other methods as arguments or parameters. However a Proc object, since it is in fact and object, can be passed into methods.
-    </p>
+          <h3>The Block</h3>
+          <p>
+            A Block is an arbitrary set of operations
+          </p>
+          <ul>
+            <li><img class="code" src="../../images/block1.png"></li>
+            <li><img class="code" src="../../images/block2.png"></li>
+          </ul>
+          <p>
+            bothe are examples of block syntax
+          </p>
+          <h3> The Proc </h3>
+          <p>
+            A Proc is a Procedure, an Object in ruby, that you pass a block into.
+          </p>
+          <ul>
+            <li><img class="code" src="../../images/proc1.png"></li>
+            <li><img class="code" src="../../images/proc2.png"></li>
+          </ul>
+          <p>
+            The biggest difference between a Block and and Proc is that a block is not as a local variable and therefor cannot be pasted into other methods as arguments or parameters. However a Proc object, since it is in fact and object, can be passed into methods.
+          </p>
 
-    <h3>Lambda, Lambda, Lambda</h3>
+          <h3>Lambda, Lambda, Lambda</h3>
 
-    <p> A Lambda as you can probable guess is a type of Proc. all the same syntax is except of course you replace Proc.new with lambda.<br>
-    <p> lambda's enforce arity. so if the block expects to have n number of arguments, then when you call an object of this type you need to have n number of arguments or the program will crash. In this way it is more like a method call then a Proc. A Proc object although it suports arity, if not give the right number of arguments will simple subsitute them with nil. </p>
-    <p> lambda's also relinquish control back to the object from which they were called, something Proc objects do not allow. What this means is that you can call 2 lambda's, with return values, in sequence and they will both get run where as if you tried to do this with a proc that had a return value only the first Proc object would run and the second would get jumped over.</p>
-    <p> TL;DR <P>
-      <iframe width="600" height="510" src="https://www.youtube.com/embed/ZZoYB_eD508" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-    </article>
-  </td></tr>
-    </table>
-    </section>
-    <hr>
-<footer>
-      <h2 class="hiddenElem" >footer</h2>
-      <table>
-        <tr>
-          <td id="links">
+          <p> A Lambda as you can probable guess is a type of Proc. all the same syntax is except of course you replace Proc.new with lambda.<br>
+            <p> lambda's enforce arity. so if the block expects to have n number of arguments, then when you call an object of this type you need to have n number of arguments or the program will crash. In this way it is more like a method call then a Proc. A Proc object although it suports arity, if not give the right number of arguments will simple subsitute them with nil. </p>
+            <p> lambda's also relinquish control back to the object from which they were called, something Proc objects do not allow. What this means is that you can call 2 lambda's, with return values, in sequence and they will both get run where as if you tried to do this with a proc that had a return value only the first Proc object would run and the second would get jumped over.</p>
+            <p> TL;DR <P>
+              <iframe src="https://www.youtube.com/embed/ZZoYB_eD508" frameborder="0" allowfullscreen></iframe>
+            </article>
+          </section>
+          <footer>
+            <hr>
             <ul>
               <li><a href="https://www.facebook.com/leegiste2"><img src="../../images/fb.png" alt="facebooklink"></a></li>
               <li><a href="https://twitter.com/lee2gist"><img src="../../images/Tw.png" alt="twitter link"></a></li>
@@ -109,11 +83,7 @@
               <li><a href="http://www.quora.com/Erick-Gist"><img src="../../images/quora.png" alt="Quora icon" alt="quora link"></a></li>
               <li><a href="https://github.com/lee-egist"><img src="../../images/github.png" alt="github icon" alt="github link"></a></li>
             </ul>
-          </td>
-          <td id="copyright"><p>&copy; 2015 Erick Gist</p>
-          </td>
-        </tr>
-      </table>
-    </footer>
-</body>
-</html>
+            <p>&copy; 2015 Erick Gist</p>
+          </footer>
+        </body>
+        </html>
