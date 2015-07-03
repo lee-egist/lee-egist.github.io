@@ -14,13 +14,6 @@
   header ul li{
     display: inline;
   }
-  section{
-    background-image: url("../images/aristotle.png");
-    background-size: auto;
-    background-position: center;
-    background-repeat:no-repeat;
-    width: auto;
-  }
 
   article{
     padding-left: 1.25em;
