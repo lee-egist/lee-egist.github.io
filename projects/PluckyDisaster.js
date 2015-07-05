@@ -23,7 +23,7 @@ Elevator.prototype.myInfo = function () {
   console.log('current floor', this.currentFloor);
   console.log('desired floor', this.player.desiredFloor);
   var goal = ['Goal: You are trying to get to floor', this.player.desiredFloor].join(" ");
-  var start = ['You are on the', this.startingFloor, 'floor'].join(" ");
+  var start = ['You are on the', this.currentFloor, 'floor'].join(" ");
 
   document.getElementById('results').innerHTML = [goal, start].join("<br>");
 };
