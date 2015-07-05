@@ -2,7 +2,7 @@ function Elevator() {
   // body...
   this.floors = Math.floor(Math.random() * 100) + 1 ;
   this.currentFloor = Math.floor(this.floors / 2);
-  this. startingFloor = Math.floor(this.floors / 2);
+  this.startingFloor = Math.floor(this.floors / 2);
   this.child = new Plucky;
   this.player = new Player;
   this.rollcount = 0;
@@ -22,11 +22,16 @@ Elevator.prototype.go_down = function () {
 
 Elevator.prototype.myInfo = function () {
   // body...
-  document.getElementById('results').innerHTML = ['You were trying to get to floor', this.player.desiredFloor].join(" ");
+  var goal = ['Goal: You are trying to get to floor', this.player.desiredFloor].join(" ");
+  var start = ['You are on the', this.startingFloor, 'floor'].join(" ");
+
+  document.getElementById('results').innerHTML = [goal, start].join("<br>");
 };
 
 Elevator.prototype.roll = function () {
   // body...
+  this.results = null;
+  this.survived = null;
   if(this.currentFloor != this.player.desiredFloor && this.rollcount < this.yourtrys){
     this.child.reroll();
 
@@ -53,15 +58,15 @@ Elevator.prototype.roll = function () {
     }
 
   } else if(this.currentFloor == this.player.desiredFloor){
-    console.log('The player has won!');
-    console.log('you started on floor', this.startingFloor);
-    console.log('You made it through', this.rollcount , 'floors');
+    this.results = 'The player has won!';
+    this.survived = ['You made it through', this.rollcount , 'floors'].join(" ");
+    document.getElementById('results').innerHTML = [this.results, this.survived].join("<br>");
   } else if(this.rollcount >= this.diff){
     var mytest = Math.abs(this.diff - this.rollcount);
-    console.log('Sorry. You died of starvation.');
-    console.log('you started on floor', this.startingFloor);
-    console.log('Your current floor was:', this.currentFloor);
-    console.log('You made it through', this.rollcount , 'floors');
+    this.results('Sorry. You died of starvation.');
+    var test = ['Your current floor was:', this.currentFloor].join(" ");
+    this.survived['You made it through', this.rollcount , 'floors'].join(" ");
+        document.getElementById('results').innerHTML = [this.results, test, this.survived].join("<br>");
   }
 
 };
@@ -79,8 +84,10 @@ Plucky.prototype.reroll = function () {
   this.chanceOfPushingButton = Math.floor((Math.random() * 100) + 20);
 };
 
-function trypage(){
+function play(){
 game = new Elevator();
-game.roll();
 game.myInfo();
+};
+function roll(){
+  game.roll();
 };
