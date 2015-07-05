@@ -52,6 +52,7 @@ Elevator.prototype.roll = function () {
         document.getElementById('floor').innerHTML = [str, floor].join(" ");
         if (this.currentFloor == this.player.desiredFloor){
           var results = 'The player has won!';
+          document.getElementById('roll').disabled = true;
           document.getElementById('winner').innerHTML = [results];
           break;
         }
@@ -70,6 +71,7 @@ Elevator.prototype.roll = function () {
         document.getElementById('floor').innerHTML = [str, floor].join(" ");
         if (this.currentFloor == this.player.desiredFloor){
           var results = 'The player has won!';
+          document.getElementById('roll').disabled = true;
           document.getElementById('winner').innerHTML = [results];
           break;
         }
@@ -78,6 +80,7 @@ Elevator.prototype.roll = function () {
 
   } else if(this.currentFloor == this.player.desiredFloor){
       var results = 'The player has won!';
+      document.getElementById('roll').disabled = true;
       document.getElementById('winner').innerHTML = [results];
   }
 
