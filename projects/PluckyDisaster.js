@@ -43,7 +43,7 @@ Elevator.prototype.roll = function () {
       if (this.currentFloor == this.player.desiredFloor){
         console.log('the player has won');
         var results = 'The player has won!';
-        document.getElementById('results').innerHTML = [results];
+        document.getElementById('results').innerHTML = results;
         break;
       }
     }
