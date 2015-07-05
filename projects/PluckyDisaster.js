@@ -109,8 +109,8 @@ Plucky.prototype.reroll = function () {
 };
 
 function play(){
-document.getElementById('results').innerHTML = '';
-ducment.getElementById('floor').innerHTML = "";
+document.getElementById('results').innerHTML = ' ';
+ducment.getElementById('floor').innerHTML = " ";
 game = new Elevator();
 game.myInfo();
 document.getElementById('roll').disabled = false;
