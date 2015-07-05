@@ -43,7 +43,6 @@ Elevator.prototype.roll = function () {
       if (this.currentFloor == this.player.desiredFloor){
         console.log('the player has won');
         var results = 'The player has won!';
-        var survived = ['You made it through', this.rollcount , 'floors'].join(" ");
         document.getElementById('results').innerHTML = [results, survived].join("<br>");
         break;
       }
@@ -52,14 +51,12 @@ Elevator.prototype.roll = function () {
 
   } else if(this.currentFloor == this.player.desiredFloor){
       var results = 'The player has won!';
-      var survived = ['You made it through', this.rollcount , 'floors'].join(" ");
       console.log('You won');
       document.getElementById('results').innerHTML = [results, survived].join("<br>");
   } else if(this.rollcount >= this.yourtrys){
     var mytest = Math.abs(this.diff - this.rollcount);
     var results = ('Sorry. You died of starvation.');
     var test = ['Your current floor was:', this.currentFloor].join(" ");
-    var survived = ['You made it through', this.rollcount , 'floors'].join(" ");
     document.getElementById('results').innerHTML = [results, test, survived].join("<br>");
     document.getElementById('roll').disabled = true;
   }
