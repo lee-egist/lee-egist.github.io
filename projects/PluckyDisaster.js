@@ -30,8 +30,8 @@ Elevator.prototype.myInfo = function () {
 
 Elevator.prototype.roll = function () {
   // body...
-  this.results = null;
-  this.survived = null;
+  this.results;
+  this.survived;
   if(this.currentFloor != this.player.desiredFloor && this.rollcount < this.yourtrys){
     this.child.reroll();
 
