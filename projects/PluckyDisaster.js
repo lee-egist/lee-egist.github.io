@@ -32,7 +32,13 @@ Elevator.prototype.roll = function () {
   // body...
   this.rollcount += 1;
   this.diff = Math.abs(this.currentFloor - this.player.desiredFloor);
-  if (this.currentFloor != this.player.desiredFloor && this.player.desiredFloor > this.currentFloor) {
+  if(this.rollcount >= this.yourtrys){
+    var mytest = Math.abs(this.diff - this.rollcount);
+    var results = ('Sorry. You died of starvation.');
+    var test = ['Your current floor was:', this.currentFloor].join(" ");
+    document.getElementById('results').innerHTML = [results, test].join("<br>");
+    document.getElementById('roll').disabled = true;
+  } else if (this.currentFloor != this.player.desiredFloor && this.player.desiredFloor > this.currentFloor) {
     this.child.reroll();
     this.rollcount += 1;
     for (var i = 0; i < this.diff / 2; i++) {
@@ -51,12 +57,6 @@ Elevator.prototype.roll = function () {
       var results = 'The player has won!';
       console.log('You won');
       document.getElementById('results').innerHTML = [results];
-  } else if(this.rollcount >= this.yourtrys){
-    var mytest = Math.abs(this.diff - this.rollcount);
-    var results = ('Sorry. You died of starvation.');
-    var test = ['Your current floor was:', this.currentFloor].join(" ");
-    document.getElementById('results').innerHTML = [results, test].join("<br>");
-    document.getElementById('roll').disabled = true;
   }
 
 };
