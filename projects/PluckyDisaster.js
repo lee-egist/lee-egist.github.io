@@ -5,7 +5,7 @@ function Elevator() {
   this.child = new Plucky;
   this.player = new Player;
   this.rollcount = 0;
-  this.yourtrys = 3;
+  this.yourtrys = 4;
 }
 
 Elevator.prototype.go_up = function () {
@@ -40,7 +40,6 @@ Elevator.prototype.roll = function () {
     document.getElementById('roll').disabled = true;
   } else if (this.currentFloor != this.player.desiredFloor && this.player.desiredFloor > this.currentFloor) {
     this.child.reroll();
-    this.rollcount += 1;
     for (var i = 0; i < this.diff / 2; i++) {
       this.calculateCurrentFloor();
     }
