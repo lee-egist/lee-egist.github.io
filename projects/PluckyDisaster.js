@@ -30,41 +30,44 @@ Elevator.prototype.roll = function () {
   // body...
   this.rollcount += 1;
   this.diff = Math.abs(this.currentFloor - this.player.desiredFloor);
+
   if(this.rollcount == this.yourtrys){
     var mytest = Math.abs(this.diff - this.rollcount);
     var results = ('Sorry. You died of starvation.');
     var test = ['Your current floor was:', this.currentFloor].join(" ");
   document.getElementById('results').innerHTML = [results, test].join("<br>");
     document.getElementById('roll').disabled = true;
-  } else if (this.currentFloor != this.player.desiredFloor && this.player.desiredFloor > this.currentFloor) {
-    this.child.reroll();
-    for (var i = 0; i < this.diff / 2; i++) {
-      this.calculateCurrentFloor();
-    }
-    for (var i = 0; i < this.player.wins; i++) {
-      this.currentFloor += 1;
-      if (this.currentFloor == this.player.desiredFloor){
-        var results = 'The player has won!';
-        document.getElementById('results').innerHTML = results;
-        break;
+  }
+  else
+    if (this.currentFloor != this.player.desiredFloor && this.player.desiredFloor > this.currentFloor) {
+      this.child.reroll();
+      for (var i = 0; i < this.diff / 2; i++) {
+        this.calculateCurrentFloor();
       }
-      this.myInfo();
-    }
+      for (var i = 0; i < this.player.wins; i++) {
+        this.currentFloor += 1;
+        if (this.currentFloor == this.player.desiredFloor){
+          var results = 'The player has won!';
+          document.getElementById('results').innerHTML = results;
+          break;
+        }
+        this.myInfo();
+      }
 
-  } else if (this.currentFloor != this.player.desiredFloor && this.player.desiredFloor < this.currentFloor) {
-    this.child.reroll();
-    for (var i = 0; i < this.diff / 2; i++) {
-      this.calculateCurrentFloor();
-    }
-    for (var i = 0; i < this.player.wins; i++) {
-      this.currentFloor -= 1;
-      if (this.currentFloor == this.player.desiredFloor){
-        var results = 'The player has won!';
-        document.getElementById('results').innerHTML = results;
-        break;
+  } else if (this.currentFloor != this.player.desiredFloor &&  this.player.desiredFloor < this.currentFloor) {
+      this.child.reroll();
+      for (var i = 0; i < this.diff / 2; i++) {
+        this.calculateCurrentFloor();
       }
-      this.myInfo();
-    }
+      for (var i = 0; i < this.player.wins; i++) {
+        this.currentFloor -= 1;
+        if (this.currentFloor == this.player.desiredFloor){
+          var results = 'The player has won!';
+          document.getElementById('results').innerHTML = results;
+          break;
+        }
+        this.myInfo();
+      }
 
   } else if(this.currentFloor == this.player.desiredFloor){
       var results = 'The player has won!';
