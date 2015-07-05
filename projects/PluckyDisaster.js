@@ -30,7 +30,7 @@ Elevator.prototype.roll = function () {
   // body...
   this.rollcount += 1;
   this.diff = Math.abs(this.currentFloor - this.player.desiredFloor);
-  if(this.rollcount = this.yourtrys){
+  if(this.rollcount == this.yourtrys){
     var mytest = Math.abs(this.diff - this.rollcount);
     var results = ('Sorry. You died of starvation.');
     var test = ['Your current floor was:', this.currentFloor].join(" ");
@@ -40,7 +40,6 @@ Elevator.prototype.roll = function () {
     this.child.reroll();
     for (var i = 0; i < this.diff / 2; i++) {
       this.calculateCurrentFloor();
-      this.myInfo();
     }
     for (var i = 0; i < this.player.wins; i++) {
       this.currentFloor += 1;
@@ -49,13 +48,13 @@ Elevator.prototype.roll = function () {
         document.getElementById('results').innerHTML = results;
         break;
       }
+      this.myInfo();
     }
 
   } else if (this.currentFloor != this.player.desiredFloor && this.player.desiredFloor < this.currentFloor) {
     this.child.reroll();
     for (var i = 0; i < this.diff / 2; i++) {
       this.calculateCurrentFloor();
-      this.myInfo();
     }
     for (var i = 0; i < this.player.wins; i++) {
       this.currentFloor -= 1;
@@ -64,6 +63,7 @@ Elevator.prototype.roll = function () {
         document.getElementById('results').innerHTML = results;
         break;
       }
+      this.myInfo();
     }
 
   } else if(this.currentFloor == this.player.desiredFloor){
