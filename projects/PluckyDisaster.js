@@ -1,7 +1,7 @@
 function Elevator() {
   // body...
-  this.currentFloor = (Math.random() * 100) + 1;
-  this.startingFloor = Math.floor(this.currentFloor / 5);
+  this.currentFloor = Math.floor((Math.random() * 100) + 1);
+  this.startingFloor = Math.floor((this.currentFloor / 5));
   this.child = new Plucky;
   this.player = new Player;
   this.rollcount = 0;
