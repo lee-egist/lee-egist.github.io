@@ -51,6 +51,21 @@ Elevator.prototype.roll = function () {
       }
     }
 
+  } else if (this.currentFloor != this.player.desiredFloor && this.player.desiredFloor < this.currentFloor) {
+    this.child.reroll();
+    for (var i = 0; i < this.diff / 2; i++) {
+      this.calculateCurrentFloor();
+      this.myInfo();
+    }
+    for (var i = 0; i < this.player.wins; i++) {
+      this.currentFloor -= 1;
+      if (this.currentFloor == this.player.desiredFloor){
+        var results = 'The player has won!';
+        document.getElementById('results').innerHTML = results;
+        break;
+      }
+    }
+
   } else if(this.currentFloor == this.player.desiredFloor){
       var results = 'The player has won!';
       console.log('You won');
