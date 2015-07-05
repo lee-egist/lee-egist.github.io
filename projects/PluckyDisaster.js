@@ -78,8 +78,7 @@ Elevator.prototype.roll = function () {
 
   } else if(this.currentFloor == this.player.desiredFloor){
       var results = 'The player has won!';
-      console.log('You won');
-      document.getElementById('results').innerHTML = [results];
+      document.getElementById('winner').innerHTML = [results];
   }
 
 };
