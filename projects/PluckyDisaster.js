@@ -46,11 +46,6 @@ Elevator.prototype.roll = function () {
         break;
       }
     }
-    console.log(this.currentFloor);
-    var goal = ['Goal: You are trying to get to floor', this.player.desiredFloor].join(" ");
-    var start = ['You are on the', this.currentFloor, 'floor'].join(" ");
-
-    document.getElementById('results').innerHTML = [goal, start].join("<br>");
 
   } else if(this.currentFloor == this.player.desiredFloor){
       var results = 'The player has won!';
