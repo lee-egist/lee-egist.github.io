@@ -73,7 +73,7 @@ Elevator.prototype.calculateCurrentFloor = function () {
 };
 
 function Player(number){
-  this.desiredFloor = 87;
+  this.desiredFloor = Math.floor(Math.random() * 100 + 1);
   this.wins = 0;
 };
 
