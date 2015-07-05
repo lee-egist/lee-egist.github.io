@@ -33,9 +33,10 @@ Elevator.prototype.roll = function () {
 
   if(this.rollcount == this.yourtrys){
     var mytest = Math.abs(this.diff - this.rollcount);
+    var plucky = 'My turn! not your turn! my turn! I push the button!'
     var results = ('Sorry. You died of starvation.');
     var test = ['Your current floor was:', this.currentFloor].join(" ");
-  document.getElementById('results').innerHTML = [results, test].join("<br>");
+  document.getElementById('results').innerHTML = [plucky, results, test].join("<br>");
     document.getElementById('roll').disabled = true;
   }
   else
