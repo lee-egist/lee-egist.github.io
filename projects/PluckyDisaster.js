@@ -30,8 +30,6 @@ Elevator.prototype.myInfo = function () {
 
 Elevator.prototype.roll = function () {
   // body...
-  this.results;
-  this.survived;
   if(this.currentFloor != this.player.desiredFloor && this.rollcount < this.yourtrys){
     this.child.reroll();
 
@@ -58,15 +56,15 @@ Elevator.prototype.roll = function () {
     }
 
   } else if(this.currentFloor == this.player.desiredFloor){
-    this.results = 'The player has won!';
-    this.survived = ['You made it through', this.rollcount , 'floors'].join(" ");
-    document.getElementById('results').innerHTML = [this.results, this.survived].join("<br>");
+    var results = 'The player has won!';
+    var survived = ['You made it through', this.rollcount , 'floors'].join(" ");
+    document.getElementById('results').innerHTML = [results, survived].join("<br>");
   } else if(this.rollcount >= this.diff){
     var mytest = Math.abs(this.diff - this.rollcount);
-    this.results('Sorry. You died of starvation.');
+    var results('Sorry. You died of starvation.');
     var test = ['Your current floor was:', this.currentFloor].join(" ");
-    this.survived['You made it through', this.rollcount , 'floors'].join(" ");
-        document.getElementById('results').innerHTML = [this.results, test, this.survived].join("<br>");
+    var survived['You made it through', this.rollcount , 'floors'].join(" ");
+        document.getElementById('results').innerHTML = [results, test, survived].join("<br>");
   }
 
 };
