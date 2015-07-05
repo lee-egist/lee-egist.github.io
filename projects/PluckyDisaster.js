@@ -22,7 +22,7 @@ Elevator.prototype.go_down = function () {
 
 Elevator.prototype.myInfo = function () {
   // body...
-  document.getElementById('results').innerHTML =  console.log('You were trying to get to floor', this.player.desiredFloor);
+  document.getElementById('results').innerHTML = 'You were trying to get to floor', this.player.desiredFloor;
 };
 
 Elevator.prototype.roll = function () {
