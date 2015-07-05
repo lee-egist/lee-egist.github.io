@@ -79,6 +79,8 @@ Plucky.prototype.reroll = function () {
   this.chanceOfPushingButton = Math.floor((Math.random() * 100) + 20);
 };
 
+function trypage(){
 game = new Elevator();
 game.roll();
 game.myInfo();
+};
