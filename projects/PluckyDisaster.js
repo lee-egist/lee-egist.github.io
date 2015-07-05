@@ -47,6 +47,9 @@ Elevator.prototype.roll = function () {
       }
       for (var i = 0; i < this.player.wins; i++) {
         this.currentFloor += 1;
+        var floor = this.currentFloor;
+        var str = 'Floor:';
+        document.getElementById('results').innerHTML = [str, floor].join(" ");
         if (this.currentFloor == this.player.desiredFloor){
           var results = 'The player has won!';
           document.getElementById('results').innerHTML = results;
@@ -62,6 +65,9 @@ Elevator.prototype.roll = function () {
       }
       for (var i = 0; i < this.player.wins; i++) {
         this.currentFloor -= 1;
+        var floor = this.currentFloor;
+        var str = 'Floor:';
+        document.getElementById('results').innerHTML = [str, floor].join(" ");
         if (this.currentFloor == this.player.desiredFloor){
           var results = 'The player has won!';
           document.getElementById('results').innerHTML = results;
