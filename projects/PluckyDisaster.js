@@ -5,7 +5,7 @@ function Elevator() {
   this.child = new Plucky;
   this.player = new Player;
   this.rollcount = 0;
-  this.yourtrys = 5;
+  this.yourtrys = 4;
 }
 
 Elevator.prototype.go_up = function () {
