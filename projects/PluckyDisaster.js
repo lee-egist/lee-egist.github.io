@@ -113,6 +113,7 @@ Plucky.prototype.reroll = function () {
 function play(){
 document.getElementById('results').innerHTML = ' ';
 document.getElementById('floor').innerHTML = " ";
+document.getElementById('winner').innerHTML = " ";
 game = new Elevator();
 game.myInfo();
 document.getElementById('roll').disabled = false;
