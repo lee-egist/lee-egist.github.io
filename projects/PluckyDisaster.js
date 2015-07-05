@@ -33,8 +33,8 @@ Elevator.prototype.roll = function () {
 
   if(this.rollcount == this.yourtrys){
     var mytest = Math.abs(this.diff - this.rollcount);
-    var plucky = 'My turn! not your turn! my turn! I push the button!';
-    var plucky2 = 'My elalator! not your elalator, my elalator.'
+    var plucky = '<h3>My turn! not your turn! my turn! I push the button!';
+    var plucky2 = 'My elalator! not your elalator, my elalator.</h3>'
     var results = ('Sorry. You died of starvation.');
     var test = ['Your current floor was:', this.currentFloor].join(" ");
   document.getElementById('results').innerHTML = [plucky, plucky2, results, test].join("<br>");
