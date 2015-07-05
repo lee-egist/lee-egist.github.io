@@ -41,7 +41,6 @@ Elevator.prototype.roll = function () {
     for (var i = 0; i < this.player.wins; i++) {
       this.currentFloor += 1;
       if (this.currentFloor == this.player.desiredFloor){
-        console.log('the player has won');
         var results = 'The player has won!';
         document.getElementById('results').innerHTML = results;
         break;
