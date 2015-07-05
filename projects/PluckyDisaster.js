@@ -32,7 +32,7 @@ Elevator.prototype.roll = function () {
   // body...
   this.rollcount += 1;
   this.diff = Math.abs(this.currentFloor - this.player.desiredFloor);
-  if(this.rollcount == this.yourtrys){
+  if(this.rollcount > this.yourtrys){
     var mytest = Math.abs(this.diff - this.rollcount);
     var results = ('Sorry. You died of starvation.');
     var test = ['Your current floor was:', this.currentFloor].join(" ");
