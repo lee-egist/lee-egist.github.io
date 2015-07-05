@@ -99,11 +99,3 @@ document.getElementById('roll').disabled = false;
 function roll(){
   game.roll();
 };
-
-thisgame = new Elevator();
-thisgame.myInfo();
-thisgame.roll();
-thisgame.myInfo();
-thisgame.roll();
-thisgame.myInfo();
-thisgame.roll();
