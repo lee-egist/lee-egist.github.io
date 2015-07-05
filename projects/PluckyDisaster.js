@@ -87,7 +87,11 @@ Plucky.prototype.reroll = function () {
 function play(){
 game = new Elevator();
 game.myInfo();
+getbutton();
 };
+function getButton(){
+  document.getElementById('roll').disabled = false
+}
 function roll(){
   game.roll();
 };
