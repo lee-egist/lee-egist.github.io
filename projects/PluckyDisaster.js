@@ -61,7 +61,7 @@ Elevator.prototype.roll = function () {
     document.getElementById('results').innerHTML = [results, survived].join("<br>");
   } else if(this.rollcount >= this.diff){
     var mytest = Math.abs(this.diff - this.rollcount);
-    var results('Sorry. You died of starvation.');
+    var results = ('Sorry. You died of starvation.');
     var test = ['Your current floor was:', this.currentFloor].join(" ");
     var survived['You made it through', this.rollcount , 'floors'].join(" ");
         document.getElementById('results').innerHTML = [results, test, survived].join("<br>");
