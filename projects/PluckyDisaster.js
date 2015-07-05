@@ -43,7 +43,7 @@ Elevator.prototype.roll = function () {
       if (this.currentFloor == this.player.desiredFloor){
         console.log('the player has won');
         var results = 'The player has won!';
-        document.getElementById('results').innerHTML = [results, survived].join("<br>");
+        document.getElementById('results').innerHTML = [results];
         break;
       }
     }
@@ -52,12 +52,12 @@ Elevator.prototype.roll = function () {
   } else if(this.currentFloor == this.player.desiredFloor){
       var results = 'The player has won!';
       console.log('You won');
-      document.getElementById('results').innerHTML = [results, survived].join("<br>");
+      document.getElementById('results').innerHTML = [results];
   } else if(this.rollcount >= this.yourtrys){
     var mytest = Math.abs(this.diff - this.rollcount);
     var results = ('Sorry. You died of starvation.');
     var test = ['Your current floor was:', this.currentFloor].join(" ");
-    document.getElementById('results').innerHTML = [results, test, survived].join("<br>");
+    document.getElementById('results').innerHTML = [results, test].join("<br>");
     document.getElementById('roll').disabled = true;
   }
 
@@ -95,4 +95,5 @@ document.getElementById('roll').disabled = false;
 
 function roll(){
   game.roll();
+  game.myInfo();
 };
