@@ -107,9 +107,7 @@ Plucky.prototype.reroll = function () {
 };
 
 function play(){
-document.getElementById('results').innerHTML = ' ';
-document.getElementById('floor').innerHTML = " ";
-document.getElementById('winner').innerHTML = " ";
+reset();
 game = new Elevator();
 game.elevatorInfo();
 document.getElementById('roll').disabled = false;
@@ -118,3 +116,9 @@ document.getElementById('roll').disabled = false;
 function roll(){
   game.roll();
 };
+
+function reset(){
+  document.getElementById('results').innerHTML = ' ';
+  document.getElementById('floor').innerHTML = " ";
+  document.getElementById('winner').innerHTML = " ";
+}
