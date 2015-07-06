@@ -1,5 +1,5 @@
+// init the Elevator class
 function Elevator() {
-  // body...
   this.currentFloor = Math.floor((Math.random() * 100) + 1);
   this.startingFloor = Math.floor((this.currentFloor / 5));
   this.child = new Plucky;
@@ -7,30 +7,27 @@ function Elevator() {
   this.rollCount = 0;
   this.numOfTries = 4;
 }
-
+// method for elevator to go up
 Elevator.prototype.go_up = function () {
-  // body...
   this.currentFloor += 1;
 };
-
+// method for elevator to go down
 Elevator.prototype.go_down = function () {
-  // body...
   this.currentFloor -= 1;
 };
-
+// method to get elevator info
 Elevator.prototype.elevatorInfo = function () {
-  // body...
   var goal = ['Goal: You are trying to get to floor', this.player.desiredFloor].join(" ");
   var start = ['You are on the', this.currentFloor, 'floor'].join(" ");
 
   document.getElementById('results').innerHTML = [goal, start].join("<br>");
 };
-
+// method to calculate player chance (game logic)
 Elevator.prototype.roll = function () {
-  // body...
   this.rollCount += 1;
   this.floorDifference = Math.abs(this.currentFloor - this.player.desiredFloor);
 
+  // first check if player has reach max number of trys
   if(this.rollCount == this.numOfTries){
     var plucky = '<h3>My turn! not your turn! my turn! I push the button!';
     var plucky2 = 'My elalator! not your elalator, my elalator.</h3>'
@@ -40,11 +37,14 @@ Elevator.prototype.roll = function () {
     document.getElementById('roll').disabled = true;
   }
   else
+    // check if player has reach desired floor
     if (this.currentFloor != this.player.desiredFloor && this.player.desiredFloor > this.currentFloor) {
 
       for (var i = 0; i < this.floorDifference / 2; i++) {
         this.calculateCurrentFloor();
       }
+      // if desired direct is down
+      // go through it player win until player has won or end of round
       for (var i = 0; i < this.player.wins; i++) {
         this.currentFloor += 1;
         var floor = this.currentFloor;
@@ -59,7 +59,10 @@ Elevator.prototype.roll = function () {
         this.elevatorInfo();
       }
 
-  } else if (this.currentFloor != this.player.desiredFloor &&  this.player.desiredFloor < this.currentFloor) {
+  } else
+  // if desired direct is down
+  // go through it player win until player has won or end of round
+  if (this.currentFloor != this.player.desiredFloor &&  this.player.desiredFloor < this.currentFloor) {
       for (var i = 0; i < this.floorDifference / 2; i++) {
         this.calculateCurrentFloor();
       }
@@ -84,8 +87,8 @@ Elevator.prototype.roll = function () {
   }
 
 };
+
 Elevator.prototype.calculateCurrentFloor = function () {
-  // body...
   this.child.reroll();
   if (this.child.chanceOfPushingButton < 60) {
     this.player.wins += 1;
@@ -102,7 +105,6 @@ function Plucky(){
 };
 
 Plucky.prototype.reroll = function () {
-  // body...
   this.chanceOfPushingButton = Math.floor((Math.random() * 100) + 20);
 };
 
@@ -121,4 +123,4 @@ function reset(){
   document.getElementById('results').innerHTML = ' ';
   document.getElementById('floor').innerHTML = " ";
   document.getElementById('winner').innerHTML = " ";
-}
+};
