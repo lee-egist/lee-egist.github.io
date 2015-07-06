@@ -87,7 +87,7 @@ Elevator.prototype.roll = function () {
 };
 Elevator.prototype.calculateCurrentFloor = function () {
   // body...
-  this.child();
+  this.child.reroll();
   if (this.child.chanceOfPushingButton < 60) {
     this.player.wins += 1;
   }
@@ -99,7 +99,7 @@ function Player(number){
 };
 
 function Plucky(){
-  this.chanceOfPushingButton = Math.floor((Math.random() * 100) + 20);
+  this.chanceOfPushingButton = 0;
 };
 
 Plucky.prototype.reroll = function () {
