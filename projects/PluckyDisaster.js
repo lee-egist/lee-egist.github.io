@@ -4,8 +4,8 @@ function Elevator() {
   this.startingFloor = Math.floor((this.currentFloor / 5));
   this.child = new Plucky;
   this.player = new Player;
-  this.rollcount = 0;
-  this.yourtrys = 4;
+  this.rollCount = 0;
+  this.numOfTries = 4;
 }
 
 Elevator.prototype.go_up = function () {
@@ -18,7 +18,7 @@ Elevator.prototype.go_down = function () {
   this.currentFloor -= 1;
 };
 
-Elevator.prototype.myInfo = function () {
+Elevator.prototype.elevatorInfo = function () {
   // body...
   var goal = ['Goal: You are trying to get to floor', this.player.desiredFloor].join(" ");
   var start = ['You are on the', this.currentFloor, 'floor'].join(" ");
@@ -28,22 +28,21 @@ Elevator.prototype.myInfo = function () {
 
 Elevator.prototype.roll = function () {
   // body...
-  this.rollcount += 1;
-  this.diff = Math.abs(this.currentFloor - this.player.desiredFloor);
+  this.rollCount += 1;
+  this.floorDifference = Math.abs(this.currentFloor - this.player.desiredFloor);
 
-  if(this.rollcount == this.yourtrys){
-    var mytest = Math.abs(this.diff - this.rollcount);
+  if(this.rollCount == this.numOfTries){
     var plucky = '<h3>My turn! not your turn! my turn! I push the button!';
     var plucky2 = 'My elalator! not your elalator, my elalator.</h3>'
-    var results = ('Sorry. You died of starvation.');
-    var test = ['Your current floor was:', this.currentFloor].join(" ");
-  document.getElementById('results').innerHTML = [plucky, plucky2, results, test].join("<br>");
+    var result = ('Sorry. You died of starvation.');
+    var currentStatus = ['Your current floor was:', this.currentFloor].join(" ");
+  document.getElementById('results').innerHTML = [plucky, plucky2, result, currentStatus].join("<br>");
     document.getElementById('roll').disabled = true;
   }
   else
     if (this.currentFloor != this.player.desiredFloor && this.player.desiredFloor > this.currentFloor) {
       this.child.reroll();
-      for (var i = 0; i < this.diff / 2; i++) {
+      for (var i = 0; i < this.floorDifference / 2; i++) {
         this.calculateCurrentFloor();
       }
       for (var i = 0; i < this.player.wins; i++) {
@@ -52,17 +51,17 @@ Elevator.prototype.roll = function () {
         var str = 'Floor:';
         document.getElementById('floor').innerHTML = [str, floor].join(" ");
         if (this.currentFloor == this.player.desiredFloor){
-          var results = 'The player has won!';
+          var result = 'The player has won!';
           document.getElementById('roll').disabled = true;
-          document.getElementById('winner').innerHTML = [results];
+          document.getElementById('winner').innerHTML = [result];
           break;
         }
-        this.myInfo();
+        this.elevatorInfo();
       }
 
   } else if (this.currentFloor != this.player.desiredFloor &&  this.player.desiredFloor < this.currentFloor) {
       this.child.reroll();
-      for (var i = 0; i < this.diff / 2; i++) {
+      for (var i = 0; i < this.floorDifference / 2; i++) {
         this.calculateCurrentFloor();
       }
       for (var i = 0; i < this.player.wins; i++) {
@@ -71,12 +70,12 @@ Elevator.prototype.roll = function () {
         var str = 'Floor:';
         document.getElementById('floor').innerHTML = [str, floor].join(" ");
         if (this.currentFloor == this.player.desiredFloor){
-          var results = 'The player has won!';
+          var result = 'The player has won!';
           document.getElementById('roll').disabled = true;
-          document.getElementById('winner').innerHTML = [results];
+          document.getElementById('winner').innerHTML = [result];
           break;
         }
-        this.myInfo();
+        this.elevatorInfo();
       }
 
   } else if(this.currentFloor == this.player.desiredFloor){
@@ -88,10 +87,8 @@ Elevator.prototype.roll = function () {
 };
 Elevator.prototype.calculateCurrentFloor = function () {
   // body...
-  this.child.reroll();
-  if (this.child.chanceOfPushingButton > 60) {
-    this.child.wins += 1;
-  } else {
+  this.child();
+  if (this.child.chanceOfPushingButton < 60) {
     this.player.wins += 1;
   }
 };
@@ -103,7 +100,6 @@ function Player(number){
 
 function Plucky(){
   this.chanceOfPushingButton = Math.floor((Math.random() * 100) + 20);
-  this.wins = 0;
 };
 
 Plucky.prototype.reroll = function () {
@@ -116,7 +112,7 @@ document.getElementById('results').innerHTML = ' ';
 document.getElementById('floor').innerHTML = " ";
 document.getElementById('winner').innerHTML = " ";
 game = new Elevator();
-game.myInfo();
+game.elevatorInfo();
 document.getElementById('roll').disabled = false;
 };
 
