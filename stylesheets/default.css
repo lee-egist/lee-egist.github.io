@@ -165,6 +165,10 @@ footer ul {
 a{
   color: #0DFFF6;
 }
+#projetcs{
+  text-decoration: none;
+}
+
 
 /******************************************************************************
 ******************************************************************************/
@@ -187,6 +191,7 @@ a{
   nav ul li {
     display: inline;
     font-family: 'Play', sans-serif;
+    text-decoration: none;
   }
 
   nav a:link {
