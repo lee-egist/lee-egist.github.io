@@ -165,7 +165,7 @@ footer ul {
 a{
   color: #0DFFF6;
 }
-#projects{
+#projects li{
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.25);
 }
