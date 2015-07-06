@@ -99,7 +99,7 @@ function Player(number){
 };
 
 function Plucky(){
-  this.chanceOfPushingButton = Math.floor((Math.random() * 100) + 20);
+  this.chanceOfPushingButton = 0;
 };
 
 Plucky.prototype.reroll = function () {
