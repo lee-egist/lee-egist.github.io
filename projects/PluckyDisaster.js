@@ -41,7 +41,7 @@ Elevator.prototype.roll = function () {
   }
   else
     if (this.currentFloor != this.player.desiredFloor && this.player.desiredFloor > this.currentFloor) {
-      this.child.reroll();
+      // this.child.reroll();
       for (var i = 0; i < this.floorDifference / 2; i++) {
         this.calculateCurrentFloor();
       }
@@ -60,7 +60,7 @@ Elevator.prototype.roll = function () {
       }
 
   } else if (this.currentFloor != this.player.desiredFloor &&  this.player.desiredFloor < this.currentFloor) {
-      this.child.reroll();
+      // this.child.reroll();
       for (var i = 0; i < this.floorDifference / 2; i++) {
         this.calculateCurrentFloor();
       }
