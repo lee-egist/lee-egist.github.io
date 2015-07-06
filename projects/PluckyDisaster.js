@@ -47,17 +47,16 @@ Elevator.prototype.roll = function () {
       }
       for (var i = 0; i < this.player.wins; i++) {
         this.currentFloor += 1;
-        this.checkWinner();
-        // var floor = this.currentFloor;
-        // var str = 'Floor:';
-        // document.getElementById('floor').innerHTML = [str, floor].join(" ");
-        // if (this.currentFloor == this.player.desiredFloor){
-        //   var result = 'The player has won!';
-        //   document.getElementById('roll').disabled = true;
-        //   document.getElementById('winner').innerHTML = [result];
-        //   break;
-        // }
-        // this.elevatorInfo();
+        var floor = this.currentFloor;
+        var str = 'Floor:';
+        document.getElementById('floor').innerHTML = [str, floor].join(" ");
+        if (this.currentFloor == this.player.desiredFloor){
+          var result = 'The player has won!';
+          document.getElementById('roll').disabled = true;
+          document.getElementById('winner').innerHTML = [result];
+          break;
+        }
+        this.elevatorInfo();
       }
 
   } else if (this.currentFloor != this.player.desiredFloor &&  this.player.desiredFloor < this.currentFloor) {
@@ -66,7 +65,16 @@ Elevator.prototype.roll = function () {
       }
       for (var i = 0; i < this.player.wins; i++) {
         this.currentFloor -= 1;
-        this.checkWinner();
+        var floor = this.currentFloor;
+        var str = 'Floor:';
+        document.getElementById('floor').innerHTML = [str, floor].join(" ");
+        if (this.currentFloor == this.player.desiredFloor){
+          var result = 'The player has won!';
+          document.getElementById('roll').disabled = true;
+          document.getElementById('winner').innerHTML = [result];
+          break;
+        }
+        this.elevatorInfo();
       }
 
   } else if(this.currentFloor == this.player.desiredFloor){
@@ -110,15 +118,3 @@ document.getElementById('roll').disabled = false;
 function roll(){
   game.roll();
 };
-Elevator.prototype.checkWinner = function(){
-  var floor = this.currentFloor;
-  var str = 'Floor:';
-  document.getElementById('floor').innerHTML = [str, floor].join(" ");
-  if (this.currentFloor == this.player.desiredFloor){
-    var result = 'The player has won!';
-    document.getElementById('roll').disabled = true;
-    document.getElementById('winner').innerHTML = [result];
-    break;
-  }
-  this.elevatorInfo();
-}
