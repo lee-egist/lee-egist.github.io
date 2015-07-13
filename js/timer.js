@@ -5,4 +5,4 @@ function timer() {
   var timeLeft = startDate - mytime;
   document.getElementById('timer').innerHTML = timeLeft.getMinutes();
 }
-window.onload = timer();
+timer();
