@@ -13,7 +13,7 @@
       var hours = timeleft.getUTCHours();
       var min = timeleft.getMinutes();
       var sec = timeleft.getSeconds();
-      var myText = days.":".hours.":".min.".".sec;
+      var myText = days.join(":").join(hours).join(":").join(min).join(":").join(sec);
       document.getElementById('timer').innerHTML = myText;
       console.log(timeleft.getDate(), ":", timeleft.getUTCHours(), ":", timeleft.getMinutes(),":", timeleft.getSeconds());
 
