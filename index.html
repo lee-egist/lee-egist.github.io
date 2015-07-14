@@ -17,21 +17,6 @@
       document.getElementById('timer').innerHTML = myText;
       console.log(timeleft.getDate(), ":", timeleft.getUTCHours(), ":", timeleft.getMinutes(),":", timeleft.getSeconds());
     };
-    window.setTimeout(countdown(){
-      function(){
-        var myTime = new Date();
-        var end = new Date(2015, 7, 3);
-        var count = end - myTime;
-        var timeleft = new Date(count);
-        var days = timeleft.getDate();
-        var hours = timeleft.getUTCHours();
-        var min = timeleft.getMinutes();
-        var sec = timeleft.getSeconds();
-        var myText = [days, hours, min, sec].join(":");
-        document.getElementById('timer').innerHTML = myText;
-        console.log(timeleft.getDate(), ":", timeleft.getUTCHours(), ":", timeleft.getMinutes(),":", timeleft.getSeconds());
-      };
-    }, 6000);
     </script>
   <link href='http://fonts.googleapis.com/css?family=Bitter|Anton|Fjalla+One|Raleway|Play:700|Roboto+Slab' rel='stylesheet' type='text/css' >
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
@@ -39,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/gif" href="images/favicon.gif">
   </head>
-  <body onload="setTimeout()">
+  <body onload="countdown()">
     <script></script>
       <nav title="navigation">
         <h1 class="hiddenElem">navigation</h1>
