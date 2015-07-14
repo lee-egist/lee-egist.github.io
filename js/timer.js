@@ -19,6 +19,3 @@ function countdown(){
   console.log(timeleft.getDate(), ":", timeleft.getUTCHours(), ":", timeleft.getMinutes(),":", timeleft.getSeconds());
 
 }
-
-countdown();
-window.setTimeout(countdown() , 6000);
