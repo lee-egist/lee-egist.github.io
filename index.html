@@ -9,7 +9,7 @@
       var end = new Date(2015, 7, 3);
       var count = end - myTime;
       var timeleft = new Date(count);
-      var myText = " ${timeleft.getDate()} : ${timeleft.getUTCHours()} : ${timeleft.getMinutes()} : ${timeleft.getSeconds()}";
+      var myText = "{days}timeleft.getDate() : {hours} : {min} : {sec}".supplant({days: timeleft.getDate(), hours: timeleft.getUTCHours(), min: timeleft.getMinutes(), sec: timeleft.getSeconds()});
       document.getElementById('timer').innerHTML = myText;
       console.log(timeleft.getDate(), ":", timeleft.getUTCHours(), ":", timeleft.getMinutes(),":", timeleft.getSeconds());
 
