@@ -27,7 +27,8 @@
         var min = timeleft.getMinutes();
         var sec = timeleft.getSeconds();
         var myText = [days, hours, min, sec].join(":");
-        document.getElementById('timer').innerHTML = myText;
+        var my_sentence = ["Countdown to Onsite ", myText].join("- ")
+        document.getElementById('timer').innerHTML = my_sentence;
       }, 1000);
     };
     </script>
