@@ -14,7 +14,8 @@
       var min = timeleft.getMinutes();
       var sec = timeleft.getSeconds();
       var myText = [days, hours, min, sec].join(":");
-      while days != 0 {
+      while (days != 0) {
+        setTimeout(1000);
         document.getElementById('timer').innerHTML = myText;
       }
       document.getElementById('timer').innerHTML = myText;
