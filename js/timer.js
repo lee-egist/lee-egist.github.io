@@ -27,7 +27,7 @@ function count(){
   }, 1000);
 };
 function paddnum(num){
-  if (num.toString.length < 2){
+  if (num.toString.length > 2){
     num = ["0", num].join('');
   }
   return num;
