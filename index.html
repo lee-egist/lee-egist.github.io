@@ -17,7 +17,18 @@
       document.getElementById('timer').innerHTML = myText;
     };
     function count(){
-      setInterval(countdown(), 1000);
+      setInterval(function() {
+        var myTime = new Date();
+        var end = new Date(2015, 7, 3);
+        var count = end - myTime;
+        var timeleft = new Date(count);
+        var days = timeleft.getDate();
+        var hours = timeleft.getUTCHours();
+        var min = timeleft.getMinutes();
+        var sec = timeleft.getSeconds();
+        var myText = [days, hours, min, sec].join(":");
+        document.getElementById('timer').innerHTML = myText;
+      }, 1000);
     };
     </script>
   <link href='http://fonts.googleapis.com/css?family=Bitter|Anton|Fjalla+One|Raleway|Play:700|Roboto+Slab' rel='stylesheet' type='text/css' >
