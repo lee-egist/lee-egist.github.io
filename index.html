@@ -16,8 +16,8 @@
       var myText = [days, hours, min, sec].join(":");
       document.getElementById('timer').innerHTML = myText;
       console.log(timeleft.getDate(), ":", timeleft.getUTCHours(), ":", timeleft.getMinutes(),":", timeleft.getSeconds());
-
     };
+    window.setTimeout(countdown(), 6000);
     </script>
   <link href='http://fonts.googleapis.com/css?family=Bitter|Anton|Fjalla+One|Raleway|Play:700|Roboto+Slab' rel='stylesheet' type='text/css' >
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
