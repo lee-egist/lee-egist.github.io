@@ -14,11 +14,10 @@
       var min = timeleft.getMinutes();
       var sec = timeleft.getSeconds();
       var myText = [days, hours, min, sec].join(":");
-      while (days != 0) {
-        setTimeout(1000);
-        document.getElementById('timer').innerHTML = myText;
-      }
       document.getElementById('timer').innerHTML = myText;
+    };
+    function count(){
+      window.setTimeout(countdown(), 1000);
     };
     </script>
   <link href='http://fonts.googleapis.com/css?family=Bitter|Anton|Fjalla+One|Raleway|Play:700|Roboto+Slab' rel='stylesheet' type='text/css' >
@@ -27,7 +26,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/gif" href="images/favicon.gif">
   </head>
-  <body onload="countdown()">
+  <body onload="count()">
     <script></script>
       <nav title="navigation">
         <h1 class="hiddenElem">navigation</h1>
