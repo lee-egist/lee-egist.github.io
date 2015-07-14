@@ -18,6 +18,7 @@ function countdown(){
   document.getElementById('timer').innerHTML = timeleft.getDate(), ":", timeleft.getUTCHours(), ":", timeleft.getMinutes(),":", timeleft.getSeconds();
   console.log(timeleft.getDate(), ":", timeleft.getUTCHours(), ":", timeleft.getMinutes(),":", timeleft.getSeconds());
 
-};
+}
+
 countdown();
-window.setTimeout(countdown () , 6000);
+window.setTimeout(countdown() , 6000);
