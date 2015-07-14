@@ -28,7 +28,7 @@ function count(){
 };
 function paddnum(num){
 
-  if (num.toString > 9){
+  if (num < 9){
     num = ["0", num].join('');
   }
   return num;
