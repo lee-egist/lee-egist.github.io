@@ -3,7 +3,21 @@
   <title>
     CarteDeVisite
   </title>
-    <script scr="js/timer.js"></script>
+    <script>
+    function countdown(){
+      var myTime = new Date();
+      var end = new Date(2015, 7, 3);
+      console.log(end);
+      var count = end - myTime;
+      console.log(count);
+      var timeleft = new Date(count);
+      console.log(timeleft.getDate());
+
+      document.getElementById('timer').innerHTML = (timeleft.getDate(), ":", timeleft.getUTCHours(), ":", timeleft.getMinutes(),":", timeleft.getSeconds());
+      console.log(timeleft.getDate(), ":", timeleft.getUTCHours(), ":", timeleft.getMinutes(),":", timeleft.getSeconds());
+
+    };
+    </script>
   <link href='http://fonts.googleapis.com/css?family=Bitter|Anton|Fjalla+One|Raleway|Play:700|Roboto+Slab' rel='stylesheet' type='text/css' >
   <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
   <meta charset="UTF-8">
@@ -11,7 +25,7 @@
   <link rel="icon" type="image/gif" href="images/favicon.gif">
   </head>
   <body onload="countdown()">
-    <script scr="js/timer.js"></script>
+    <script></script>
       <nav title="navigation">
         <h1 class="hiddenElem">navigation</h1>
         <ul>
