@@ -17,7 +17,7 @@
       document.getElementById('timer').innerHTML = myText;
     };
     function count(){
-      window.setTimeout(countdown(), 1000);
+      window.setInterval(countdown(), 1000);
     };
     </script>
   <link href='http://fonts.googleapis.com/css?family=Bitter|Anton|Fjalla+One|Raleway|Play:700|Roboto+Slab' rel='stylesheet' type='text/css' >
@@ -40,7 +40,7 @@
       </nav>
       <section id="poster" title="Welcome message">
         <h2>Hello World & Hello DBC!</h2>
-        <p id="timer">some text</p>
+        <p id="timer"></p>
           <h2 class="hiddenElem">Week 1 reaction vid</h2>
           <iframe width="854" height="510" src="https://www.youtube.com/embed/6dCANIvQ0bk" allowfullscreen></iframe>
         <article>
