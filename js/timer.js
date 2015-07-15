@@ -14,7 +14,7 @@ function countdown(){
 function count(){
   setInterval(function() {
     var myTime = new Date();
-    var end = new Date(2015, 6, 27);
+    var end = new Date(2015, 6, 27, 9);
     var count = end - myTime;
     var timeleft = new Date(count);
     var days = paddnum(timeleft.getDate());
