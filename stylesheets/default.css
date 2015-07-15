@@ -62,10 +62,7 @@ nav a:link {
   padding: .1em;
   font-size: 1.25em;
 }
-nav a img{
 
-  width:30px;
-}
 
 nav a:hover, nav a:active, #links a:hover, #links a:active { color: #0688B7; }
 
