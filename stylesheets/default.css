@@ -54,8 +54,11 @@ nav ul li {
   font-family: 'Play', sans-serif;
   padding-top: .25em;
   padding-bottom: .25em;
+  height: 100%;
 }
-
+nav ul li a{
+  height: 100%;
+}
 nav a:link {
   color: #ffffff;
   text-decoration: none;
@@ -63,12 +66,10 @@ nav a:link {
   font-size: 1.25em;
 }
 
-
 nav a:hover, nav a:active, #links a:hover, #links a:active { color: #0688B7; }
 
 nav a:visited {
   color: #0A2C38;
-  background-color: white;
 }
 
 iframe {
