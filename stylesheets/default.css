@@ -207,6 +207,7 @@ a{
     /*text-decoration: none;*/
   }
   nav a img{
+    padding: .25em;
     background-size: 55px;
   }
   nav a img:hover{
