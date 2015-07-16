@@ -204,7 +204,7 @@ a{
 
   nav a:link {
     color: #AD2141;
-    text-decoration: none;
+    /*text-decoration: none;*/
   }
 
   nav a:hover, nav a:active{
