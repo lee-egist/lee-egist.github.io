@@ -210,7 +210,8 @@ a{
     background-size: 55px;
   }
   nav a img:hover{
-    background-color: blue;
+    border-radius: .5em;
+    background-color: white;
     -moz-box-shadow: 0 0 25px black;
     -webkit-box-shadow: 0 0 25px black;
     box-shadow: 0 0 25px #ccc;
