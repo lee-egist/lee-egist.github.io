@@ -210,9 +210,9 @@ a{
     background-size: 55px;
   }
   nav a img:hover{
-    -moz-box-shadow: 0 0 10px #ccc;
-    -webkit-box-shadow: 0 0 10px #ccc;
-    box-shadow: 0 0 10px #ccc;
+    -moz-box-shadow: 0 0 25px black;
+    -webkit-box-shadow: 0 0 25px black;
+    box-shadow: 0 0 25px #ccc;
   }
 
   nav a:hover, nav a:active{
