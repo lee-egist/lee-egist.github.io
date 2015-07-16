@@ -61,7 +61,7 @@ nav ul li a{
 }
 nav a:link {
   color: #ffffff;
-  text-decoration: none;
+  /*text-decoration: none;*/
   padding: .1em;
   font-size: 1.25em;
 }
