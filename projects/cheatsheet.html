@@ -7,8 +7,9 @@
 <meta charset="UTF-8">
 </head>
 <body>
+  <h1 id="title">My Programming Cheatsheet</h1>
 <div class="topics">
-<table>
+<table id="topics">
 <tr>
 <td>
 <ul>
@@ -33,12 +34,18 @@
 </tr>
 </table>
 </div>
+<hr>
 <div class="main">
 <section id="CLI">
-<table>
+  <h1>Command Line Interface (CLI)</h1>
+<table class="cheat">
+  <tr>
+  <th>Command</th>
+  <th>Description</th>
+  </tr>
   <tr>
     <td>
-      ./.bash_profile
+      <b>./.bash_profile <img src="../images/unix.png" alt="unix logo" /></b>
     </td>
     <td>
       <p>
@@ -51,7 +58,7 @@
   </tr>
   <tr>
     <td>
-      man
+      <b>man <img src="../images/unix.png" alt="unix logo" /><br>help <img src="../images/windows.png" alt="windows logo" /></b>
     </td>
     <td>
       <p>
@@ -66,7 +73,7 @@
   </tr>
   <tr>
     <td>
-      pwd
+      <b>pwd <img src="../images/unix.png" alt="unix logo" /><img src="../images/windows.png" alt="windows logo" /></b>
     </td>
     <td>
       <p>
@@ -77,7 +84,7 @@
   </tr>
   <tr>
     <td>
-      which <program name>
+    <b>which <img src="../images/unix.png" alt="unix logo" /><program name></b>
     </td>
     <td>
       <p>
@@ -87,7 +94,7 @@
   </tr>
   <tr>
     <td>
-      brew <program name>
+      <b>brew <img src="../images/unix.png" alt="unix logo" /><program name></b>
     </td>
     <td>
       <p>
@@ -97,396 +104,514 @@
       </p>
     </td>
   </tr>
+  <tr>
+    <td>
+      <b>mkdir <img src="../images/unix.png" alt="unix logo" /><img src="../images/windows.png" alt="windows logo" /></b>
+    </td>
+    <td>
+      <p>
+        make a directory
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>cp<file name> <copy destination><br><img src="../images/unix.png" alt="unix logo" /><img src="../images/windows.png" alt="windows logo" /></b>
+    </td>
+    <td>
+      <p>
+        copy file or directory
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>cat <img src="../images/unix.png" alt="unix logo" /><br> type<file name> <img src="../images/windows.png" alt="windows logo" /></b>
+    </td>
+    <td>
+      <p>
+        The most common use of cat is to read the contents of files, and cat is often the most convenient program for this purpose.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>xargs<file name></b>
+    </td>
+    <td>
+      <p>
+        execute arguments
+      </p>
+    </td>
+  </tr>
+<tr>
+  <td>
+    <b>find <img src="../images/unix.png" alt="unix logo" /><br> dir-r<file name> <img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>
+      find files
+    </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>grep <img src="../images/unix.png" alt="unix logo" /><br> select-string <img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>
+      find things inside files
+    </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>apropos <img src="../images/unix.png" alt="unix logo" /><br> helpctr <img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>
+      find what man page is appropriate
+    </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>env <img src="../images/unix.png" alt="unix logo" /></b>
+  </td>
+  <td>
+    <p>
+      look at your enivorment
+    </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>echo <img src="../images/unix.png" alt="unix logo" /><img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>
+      print some arguments
+    </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>export <img src="../images/unix.png" alt="unix logo" /><br> set <img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>
+      export / set a new enviroment variable
+    </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>chmod <img src="../images/unix.png" alt="unix logo" /><br> attrib <img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>
+      change file / directory permissions
+    </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>chown <img src="../images/unix.png" alt="unix logo" /><br> icacls <img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>
+      change file / directory ownership
+    </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>for files <img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>
+      run a command on a group of files
+    </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>robocopy <img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>command-line directory and/or file replication command. Robocopy functionally replaces Xcopy, with more options
+    </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>sudo <img src="../images/unix.png" alt="unix logo" /><br> runas <img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>become super / root user
+    </p>
+  </td>
+</tr><tr>
+  <td>
+    <b>less <img src="../images/unix.png" alt="unix logo" /><br> more <img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>
+      page through a file
+    </p>
+  </td>
+</tr>
+<tr>
+  <td>
+    <b>rmdir <img src="../images/unix.png" alt="unix logo" /><img src="../images/windows.png" alt="windows logo" /></b>
+  </td>
+  <td>
+    <p>remove directory
+    </p>
+  </td>
+</tr>
 </table>
+<br>
 <a href="#topics">Back to top</a>
+<br>
 </section>
+<hr>
 <section id="oop">
+<h1>Object Oriented Programming</h1>
 <p>
-<h2>single responsibility</h2>
+<h3>Single responsibility</h3>
 <p>
-Maecenas ac laoreet ex. Nunc nec ipsum odio. Vestibulum feugiat ligula nec tellus vulputate, sed sollicitudin odio scelerisque. Maecenas nec neque ut tortor elementum faucibus ac eget ligula. Praesent pharetra ut justo sit amet bibendum. Vestibulum aliquam et enim ac luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam a vulputate tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>
-
-Praesent pulvinar ornare massa a auctor. Etiam a maximus sapien, at viverra ex. Aenean vestibulum libero sed justo porta, vitae ullamcorper risus mollis. Morbi libero augue, dapibus quis finibus non, suscipit vel nulla. Mauris ligula sem, aliquet eget bibendum quis, semper iaculis purus. Curabitur vestibulum, diam vitae aliquet posuere, tellus nisi congue justo, a fermentum metus ante eget lacus. Proin at massa luctus, venenatis libero a, iaculis diam. Vivamus viverra mi quis erat porttitor tincidunt. Donec cursus quam et congue ornare. Morbi malesuada sapien in mi sodales cursus. Donec vulputate tortor et mi pharetra, a malesuada nunc consequat. Vivamus nec dui vehicula, ullamcorper nibh porta, hendrerit erat. Ut odio tortor, laoreet sit amet accumsan eu, faucibus at neque. Phasellus rutrum odio sed nibh aliquet, ac ornare nisl pulvinar. Morbi porttitor, odio non lobortis tempus, urna augue sagittis lorem, a dictum leo elit id diam.</p>
-<h2>Classes</h2>
+  Code should be:</p>
+  <ul>
+    <li>Transparent The consequences of change should be obvious in the code that is changing and in distant code that relies upon it</li>
+    <li>Reasonable The cost of any change should be proportional to the benefits the change achieves</li>
+    <li>Usable Existing code should be usable in new and unexpected contexts</li>
+    <li>Exemplary The code itself should encourage those who change it to perpetuate these qualities</li>
+  </ul>
 <p>
-Nam vitae lobortis risus. Nulla mattis orci ac libero posuere, in consectetur risus posuere. In hac habitasse platea dictumst. Cras tellus tellus, dignissim non convallis vitae, vulputate eu arcu. Integer tincidunt erat vitae ipsum lobortis pharetra. In consequat arcu quis arcu semper suscipit. Etiam mattis augue cursus interdum pharetra. Proin mollis vulputate nunc. Maecenas pretium, ligula ac sodales ultrices, mi eros finibus arcu, a tincidunt ante massa eget risus. Morbi tristique congue eros, eu maximus dui vestibulum at. Vestibulum massa dui, volutpat at tristique et, pretium id augue.<br>
+  A class should do the smallest possible useful thing.</p>
+  <h4>why?</h4>
+  <p>
+    Applications that are easy to change consist of classes that are easy to reuse. Reusable classes are pluggable units of well-defined behavior that have few entanglements. An application that is easy to change is like a box of building blocks; you can select just the pieces you need and assemble them in unanticipated ways.<br> <span id="cite">- Metz, Sandi  <em>Practical Object Oriented Design in Ruby (POODR)</em>. Crawfordsville: Addison-Wesley, 2013 . Print.</span>
+  </p>
 
-Morbi congue ultrices odio at bibendum. Nam id felis ac purus luctus lobortis. Vestibulum venenatis nunc eu purus rutrum, euismod malesuada urna commodo. Quisque felis risus, placerat in felis quis, tempus tincidunt nisi. Sed porta tortor et lacus ultrices finibus. Proin mattis, velit sit amet elementum pulvinar, odio mauris varius odio, pretium feugiat lacus ipsum at quam. Etiam commodo imperdiet metus sit amet interdum. Aliquam nec ligula vel mauris sodales elementum. Aenean aliquam ultricies magna non fermentum. Phasellus fermentum eros nec erat semper, eu consectetur est vehicula. Nam mauris mauris, egestas ut ex quis, vulputate interdum orci. Sed vel ante est. Aliquam nec justo auctor neque volutpat convallis. Sed a ullamcorper urna. In facilisis est in ante congue congue. Praesent ligula nibh, imperdiet et sem at, finibus convallis ligula.</p>
-<h2>Inheritance</h2>
+<h3>Classes</h3>
 <p>
-Sed sit amet faucibus felis. Praesent vel purus mauris. Ut in molestie dolor. Donec non augue sit amet justo auctor condimentum eget ut nisl. Mauris magna lacus, egestas sit amet diam vitae, molestie gravida sapien. Nulla ultrices risus eu velit elementum, et interdum magna rhoncus. Sed accumsan nunc tempus consectetur molestie. Aenean a nisl ultricies, venenatis quam sed, hendrerit neque. Suspendisse eros nunc, rutrum quis purus a, molestie efficitur felis. Donec porttitor lobortis ex a rutrum. Vivamus sed imperdiet mi. Sed eget nisi vel augue elementum tempor. Nullam aliquet pulvinar magna, at elementum erat venenatis sed.<br>
+A class is a blueprint. one blueprint can be used to make many of the same objects for example a house or a bunch of houses, can be based off the same blue print. class are to objects what blueprints are to houses.</p>
 
-Morbi auctor nisi vel mauris tempus, sed blandit arcu egestas. Donec vitae neque eget turpis gravida tincidunt. Suspendisse fringilla nulla vitae ipsum laoreet, id iaculis erat viverra. Aliquam condimentum semper posuere. Phasellus eu porttitor lorem, at congue velit. Cras metus neque, cursus vitae tincidunt id, lobortis a tortor. Nam enim enim, congue at malesuada eget, elementum non eros. Ut porta in tortor sed finibus. Nunc et ex sed eros finibus ullamcorper in ut dolor. Vivamus hendrerit purus non mauris tincidunt, aliquet laoreet purus pretium.</p>
-<h2>behavior & messages </h2>
+<h3>Inheritance</h3>
 <p>
-Aliquam scelerisque hendrerit nisl, vitae hendrerit dolor elementum at. Phasellus scelerisque urna in porta egestas. Curabitur eu enim elit. Praesent quis mauris lobortis libero tempor egestas. In nulla massa, facilisis vel sem quis, volutpat volutpat elit. Cras sagittis finibus metus. Duis eu mauris purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br>
-
-Aliquam blandit tortor nec sem ullamcorper, vel sodales augue finibus. Ut porta ut eros eget vehicula. Integer felis augue, fermentum eget tellus id, condimentum tempor nisi. Mauris in dolor iaculis, laoreet massa non, efficitur turpis. Nulla quis leo urna. Curabitur nec massa pellentesque, semper massa sit amet, maximus libero. Suspendisse potenti. Fusce sit amet lectus posuere, aliquam sem sit amet, maximus libero. Morbi vulputate mauris ut libero imperdiet, volutpat maximus nisi lobortis. Pellentesque quis sem nisi.<br>
-
-Curabitur efficitur aliquam nisl, sed porta mi vestibulum eget. Curabitur dapibus tincidunt purus, a ullamcorper mauris ultrices sollicitudin. Vivamus sit amet lorem turpis. Morbi eu enim a tellus iaculis tincidunt sit amet eget risus. Nunc quis est odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut vel venenatis sem. Aliquam non nulla in dolor accumsan imperdiet eu vel massa. Etiam sit amet dolor eu tellus bibendum tempor. Ut urna diam, tincidunt in vestibulum eleifend, placerat ut libero.
+Inheritance is, at its core, a mechanism for automatic message
+delegation. It defines a forwarding path for not-understood messages. It creates relationships such that, if one object cannot respond to a received message, it delegates that message to another. You don’t have to write code to explicitly delegate the message, instead you define an inheritance relationship between two objects and the forwarding happens automatically.<br> <span id="cite">- Metz, Sandi  <em>Practical Object Oriented Design in Ruby (POODR)</em>. Crawfordsville: Addison-Wesley, 2013 . Print.</span></p>
+<h3>Behavior & Messages </h3>
+<p>
+Behavior is what an object can do<br>
+Messages are how you get that object to perform that behavoir
 </p>
 <a href="#topics">Back to top</a>
+<br>
 </section>
+<hr>
 <section id="ruby">
+  <h1>Ruby</h1>
 <p>
-  <h2>syntax</h2>
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
-  <h2>number convience methods</h2>
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
-  <h2>string convience methods</h2>
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
-  <h2>array convience methods</h2>
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
-  <h2>hash convience methods</h2>
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
-  <h2>enumeration</h2>
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
+  <h3><a href="http://ruby-doc.org/docs/ruby-doc-bundle/Manual/man-1.4/syntax.html">Syntax </a></h3>
+  <h3><a href="http://ruby-doc.org/core-2.2.0/Integer.html">Integer convience methods </a></h3>
+  <h3><a href="http://ruby-doc.org/core-2.2.0/String.html">String convience methods </a></h3>
+  <h3><a href="http://ruby-doc.org/core-2.2.0/Array.html">Array convience methods </a></h3>
+  <h3><a href="http://ruby-doc.org/core-2.2.2/Hash.html">Hash convience methods </a></h3>
+  <h3><a href="http://ruby-doc.org/core-2.2.2/Enumerable.html">Enumerable </a></h3>
 <a href="#topics">Back to top</a>
+<br>
 </section>
+<hr>
 <section id="javascript">
-  <p>
-    <h2>syntax</h2>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
-    <h2>functions & objects</h2>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
-    <h2>string convience methods</h2>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
-    <h2>array convience methods</h2>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
-    <h2>hash convience methods</h2>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
-    <h2>enumeration</h2>
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
+  <h1>Javascript</h1>
+  <h3><a href="https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics">Syntax </a></h3>
+  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Integer convience methods </a></h3>
+  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String convience methods </a></h3>
+  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/array">Array convience methods </a></h3>
+  <h3><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object convience methods </a></h3>
 <a href="#topics">Back to top</a>
+<br>
 </section>
+<hr>
 <section id="md">
-  <table>
+  <h1>Markdown cheatsheet</h1>
+  <table class="cheat">
+    <tr>
+    <th>Command</th>
+    <th>Description</th>
+    </tr>
     <tr>
       <td>
-        ./.bash_profile
+        <h1>Heading 1</h1>
       </td>
       <td>
-        <p>
-          this is where you go to set up alias and configure bash.
-        </p>
-        <p>
-          usually found in your home directory.
-        </p>
+        <code># text in between #</code>
       </td>
     </tr>
     <tr>
       <td>
-        man
+        <h2>Heading 2</h2>
       </td>
       <td>
-        <p>
-          man formats and displays the on-line manual pages.  If you specify sec-
-          tion, man only looks in that section of the manual.  name  is  normally
-          the  name of the manual page, which is typically the name of a command,
-          function, or file.  However, if name contains  a  slash  (/)  then  man
-          interprets  it  as a file specification, so that you can do man ./foo.5
-          or even man /cd/foo/bar.1.gz.
-        </p>
+        <code>## text in between ##</code>
       </td>
     </tr>
     <tr>
       <td>
-        pwd
+        <h3>Heading 3</h3>
       </td>
       <td>
-        <p>
-          The pwd utility writes the absolute pathname of the current working
-          directory to the standard output.
-        </p>
+        <code>### text in between ###</code>
       </td>
     </tr>
     <tr>
       <td>
-        which <program name>
+        <h4>Heading 4</h4>
       </td>
       <td>
-        <p>
-          The which utility takes a list of command names and searches the path for each executable file that would be run had these commands actually been invoked.
-        </p>
+        <code>#### text in between ####</code>
       </td>
     </tr>
     <tr>
       <td>
-        brew <program name>
+        <h5>Heading 5</h5>
       </td>
       <td>
-        <p>
-          Homebrew is the easiest and most flexible way to install the UNIX tools
-          Apple didn't include with OS X.
-          <a href="#">more on brew commands</a>
-        </p>
+        <code>
+          ##### text in between #####
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h6>Heading 5</h6>
+      </td>
+      <td>
+        <code>
+          ###### text in between ######
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <em>italic</em>
+      </td>
+      <td>
+        <code>
+          * text in between * or _ text in between _
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>bold</b>
+      </td>
+      <td>
+        <code>
+          ** text in between ** or __ text in between __
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b><em>bold & italic</em></b>
+      </td>
+      <td>
+        <code>
+          *** text in between *** or ___ text in between ___
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strike>strike through</strike>
+      </td>
+      <td>
+        <code>
+          ~~ text in between ~~
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>ordered list</p>
+      </td>
+      <td>
+        <code>
+          1. text<br>
+          2. text<br>
+          3. text<br>
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>un-ordered list</p>
+      </td>
+      <td>
+        <code>
+          * text<br>
+          * text<br>
+          * text<br>
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>links without title</p>
+      </td>
+      <td>
+        <code>
+[link without title](https://github.com/lee-egist/markdown_cheatsheet/edit/master/README.md)
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>links with title</p>
+      </td>
+      <td>
+        <code>
+[link with title](https://github.com/lee-egist/markdown_cheatsheet/edit/master/README.md "Erick's Markdown Cheatsheet")
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>link by reference</p>
+      </td>
+      <td>
+        <code>
+          [reference-style link][Arbitrary case-insensitive reference text]
+        </code>
+          <p>somewhere later in document</p>
+          <code>
+          [arbitrary case-insensitive reference text]: https://github.com/lee-egist/markdown_cheatsheet/edit/master/README.md
+        </code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>table</p>
+      </td>
+      <td>
+        <code>
+          | header       | for          | table        |<br>
+          |--------------|-------------:|-------------:|<br>
+          | text         | 12345        | $$$$$$       |<br>
+          | *markdown*   | ``codeblock``| > blockquote.|<br>
+          | one          | more         | row          |<br>
+        </code>
       </td>
     </tr>
   </table>
+  <a href="#">more on brew commands</a>
+  <br>
 <a href="#topics">Back to top</a>
+<br>
 </section>
+<hr>
 <section id="git">
-  <table>
-    <tr>
-      <td>
-        ./.bash_profile
-      </td>
-      <td>
-        <p>
-          this is where you go to set up alias and configure bash.
-        </p>
-        <p>
-          usually found in your home directory.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        man
-      </td>
-      <td>
-        <p>
-          man formats and displays the on-line manual pages.  If you specify sec-
-          tion, man only looks in that section of the manual.  name  is  normally
-          the  name of the manual page, which is typically the name of a command,
-          function, or file.  However, if name contains  a  slash  (/)  then  man
-          interprets  it  as a file specification, so that you can do man ./foo.5
-          or even man /cd/foo/bar.1.gz.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        pwd
-      </td>
-      <td>
-        <p>
-          The pwd utility writes the absolute pathname of the current working
-          directory to the standard output.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        which <program name>
-      </td>
-      <td>
-        <p>
-          The which utility takes a list of command names and searches the path for each executable file that would be run had these commands actually been invoked.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        brew <program name>
-      </td>
-      <td>
-        <p>
-          Homebrew is the easiest and most flexible way to install the UNIX tools
-          Apple didn't include with OS X.
-          <a href="#">more on brew commands</a>
-        </p>
-      </td>
-    </tr>
-  </table>
+  <h1>Git & Github</h1>
+
+  <p>
+    Git is a version control system gitHub is a webbased application to manage git repositories and colaborate with others. read my post @  <a href="http://lee-egist.github.io/blog/tech/t1-git-blog.html">lee-egist.github.io</a>
+  </p>
+  <h3><a href="../images/github-git-cheat-sheet.pdf">Git cheatsheet</a></h3>
+  <br>
 <a href="#topics">Back to top</a>
+<br>
 </section>
+<hr>
 <section id="web">
-  <table>
-    <tr>
-      <td>
-        ./.bash_profile
-      </td>
-      <td>
-        <p>
-          this is where you go to set up alias and configure bash.
-        </p>
-        <p>
-          usually found in your home directory.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        man
-      </td>
-      <td>
-        <p>
-          man formats and displays the on-line manual pages.  If you specify sec-
-          tion, man only looks in that section of the manual.  name  is  normally
-          the  name of the manual page, which is typically the name of a command,
-          function, or file.  However, if name contains  a  slash  (/)  then  man
-          interprets  it  as a file specification, so that you can do man ./foo.5
-          or even man /cd/foo/bar.1.gz.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        pwd
-      </td>
-      <td>
-        <p>
-          The pwd utility writes the absolute pathname of the current working
-          directory to the standard output.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        which <program name>
-      </td>
-      <td>
-        <p>
-          The which utility takes a list of command names and searches the path for each executable file that would be run had these commands actually been invoked.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        brew <program name>
-      </td>
-      <td>
-        <p>
-          Homebrew is the easiest and most flexible way to install the UNIX tools
-          Apple didn't include with OS X.
-          <a href="#">more on brew commands</a>
-        </p>
-      </td>
-    </tr>
-  </table>
+  <h1>HTML</h1>
+  <p>
+    HTML is really to large to cover in one page. Here is a link to a good resource: <a href="https://www.w3school.com">www.w3school.com</a>
+  </p>
+  <br>
 <a href="#topics">Back to top</a>
+<br>
 </section>
+<hr>
 <section id="style">
-  <h2>@media</h2>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.<br>
-
-Maecenas ac laoreet ex. Nunc nec ipsum odio. Vestibulum feugiat ligula nec tellus vulputate, sed sollicitudin odio scelerisque. Maecenas nec neque ut tortor elementum faucibus ac eget ligula. Praesent pharetra ut justo sit amet bibendum. Vestibulum aliquam et enim ac luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam a vulputate tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-<h2>position</h2>
-<p>
-Praesent pulvinar ornare massa a auctor. Etiam a maximus sapien, at viverra ex. Aenean vestibulum libero sed justo porta, vitae ullamcorper risus mollis. Morbi libero augue, dapibus quis finibus non, suscipit vel nulla. Mauris ligula sem, aliquet eget bibendum quis, semper iaculis purus. Curabitur vestibulum, diam vitae aliquet posuere, tellus nisi congue justo, a fermentum metus ante eget lacus. Proin at massa luctus, venenatis libero a, iaculis diam. Vivamus viverra mi quis erat porttitor tincidunt. Donec cursus quam et congue ornare. Morbi malesuada sapien in mi sodales cursus. Donec vulputate tortor et mi pharetra, a malesuada nunc consequat. Vivamus nec dui vehicula, ullamcorper nibh porta, hendrerit erat. Ut odio tortor, laoreet sit amet accumsan eu, faucibus at neque. Phasellus rutrum odio sed nibh aliquet, ac ornare nisl pulvinar. Morbi porttitor, odio non lobortis tempus, urna augue sagittis lorem, a dictum leo elit id diam.<br>
-
-Nam vitae lobortis risus. Nulla mattis orci ac libero posuere, in consectetur risus posuere. In hac habitasse platea dictumst. Cras tellus tellus, dignissim non convallis vitae, vulputate eu arcu. Integer tincidunt erat vitae ipsum lobortis pharetra. In consequat arcu quis arcu semper suscipit. Etiam mattis augue cursus interdum pharetra. Proin mollis vulputate nunc. Maecenas pretium, ligula ac sodales ultrices, mi eros finibus arcu, a tincidunt ante massa eget risus. Morbi tristique congue eros, eu maximus dui vestibulum at. Vestibulum massa dui, volutpat at tristique et, pretium id augue.</p>
-<h2>cross-browser compatabliity</h2>
-<p>
-Morbi congue ultrices odio at bibendum. Nam id felis ac purus luctus lobortis. Vestibulum venenatis nunc eu purus rutrum, euismod malesuada urna commodo. Quisque felis risus, placerat in felis quis, tempus tincidunt nisi. Sed porta tortor et lacus ultrices finibus. Proin mattis, velit sit amet elementum pulvinar, odio mauris varius odio, pretium feugiat lacus ipsum at quam. Etiam commodo imperdiet metus sit amet interdum. Aliquam nec ligula vel mauris sodales elementum. Aenean aliquam ultricies magna non fermentum. Phasellus fermentum eros nec erat semper, eu consectetur est vehicula. Nam mauris mauris, egestas ut ex quis, vulputate interdum orci. Sed vel ante est. Aliquam nec justo auctor neque volutpat convallis. Sed a ullamcorper urna. In facilisis est in ante congue congue. Praesent ligula nibh, imperdiet et sem at, finibus convallis ligula.</p>
-<h2>resources</h2>
-<p>
-Sed sit amet faucibus felis. Praesent vel purus mauris. Ut in molestie dolor. Donec non augue sit amet justo auctor condimentum eget ut nisl. Mauris magna lacus, egestas sit amet diam vitae, molestie gravida sapien. Nulla ultrices risus eu velit elementum, et interdum magna rhoncus. Sed accumsan nunc tempus consectetur molestie. Aenean a nisl ultricies, venenatis quam sed, hendrerit neque. Suspendisse eros nunc, rutrum quis purus a, molestie efficitur felis. Donec porttitor lobortis ex a rutrum. Vivamus sed imperdiet mi. Sed eget nisi vel augue elementum tempor. Nullam aliquet pulvinar magna, at elementum erat venenatis sed.<br>
+  <h1>Cascading Style Sheets</h1>
+  <h3>@media</h3>
+  <h3>position</h3>
+  <h3>cross-browser compatabliity</h3>
 </p>
+<br>
 <a href="#topics">Back to top</a>
+<br>
 </section>
+<hr>
 <section id="sin">
+  <h1>Sinatra</h1>
 <h2>Some kind of ruby gem?</h2>
 <p>
   don't know what i don't know
 </p>
+<br>
 <a href="#topics">Back to top</a>
+<br>
 </section>
+<hr>
 <section id="rails">
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur, tellus eu aliquet fermentum, ipsum erat feugiat nunc, vehicula sodales lectus ligula quis lorem. Curabitur ut lobortis urna, ut faucibus erat. Aenean iaculis porta est. In hac habitasse platea dictumst. Nunc id venenatis velit, id commodo tortor. Aliquam erat volutpat. Curabitur pellentesque congue enim at dapibus. Duis nisi urna, vehicula ut luctus et, venenatis a risus. Aenean nec semper nulla. Proin convallis id orci rutrum ornare.</p>
-<h2>common commands</h2>
-<p>
-Maecenas ac laoreet ex. Nunc nec ipsum odio. Vestibulum feugiat ligula nec tellus vulputate, sed sollicitudin odio scelerisque. Maecenas nec neque ut tortor elementum faucibus ac eget ligula. Praesent pharetra ut justo sit amet bibendum. Vestibulum aliquam et enim ac luctus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam a vulputate tellus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>
+  <h1>Rails</h1>
 
-Praesent pulvinar ornare massa a auctor. Etiam a maximus sapien, at viverra ex. Aenean vestibulum libero sed justo porta, vitae ullamcorper risus mollis. Morbi libero augue, dapibus quis finibus non, suscipit vel nulla. Mauris ligula sem, aliquet eget bibendum quis, semper iaculis purus. Curabitur vestibulum, diam vitae aliquet posuere, tellus nisi congue justo, a fermentum metus ante eget lacus. Proin at massa luctus, venenatis libero a, iaculis diam. Vivamus viverra mi quis erat porttitor tincidunt. Donec cursus quam et congue ornare. Morbi malesuada sapien in mi sodales cursus. Donec vulputate tortor et mi pharetra, a malesuada nunc consequat. Vivamus nec dui vehicula, ullamcorper nibh porta, hendrerit erat. Ut odio tortor, laoreet sit amet accumsan eu, faucibus at neque. Phasellus rutrum odio sed nibh aliquet, ac ornare nisl pulvinar. Morbi porttitor, odio non lobortis tempus, urna augue sagittis lorem, a dictum leo elit id diam.</p>
-<h2>conventions</h2>
-<p>
-Nam vitae lobortis risus. Nulla mattis orci ac libero posuere, in consectetur risus posuere. In hac habitasse platea dictumst. Cras tellus tellus, dignissim non convallis vitae, vulputate eu arcu. Integer tincidunt erat vitae ipsum lobortis pharetra. In consequat arcu quis arcu semper suscipit. Etiam mattis augue cursus interdum pharetra. Proin mollis vulputate nunc. Maecenas pretium, ligula ac sodales ultrices, mi eros finibus arcu, a tincidunt ante massa eget risus. Morbi tristique congue eros, eu maximus dui vestibulum at. Vestibulum massa dui, volutpat at tristique et, pretium id augue.<br>
-
-Morbi congue ultrices odio at bibendum. Nam id felis ac purus luctus lobortis. Vestibulum venenatis nunc eu purus rutrum, euismod malesuada urna commodo. Quisque felis risus, placerat in felis quis, tempus tincidunt nisi. Sed porta tortor et lacus ultrices finibus. Proin mattis, velit sit amet elementum pulvinar, odio mauris varius odio, pretium feugiat lacus ipsum at quam. Etiam commodo imperdiet metus sit amet interdum. Aliquam nec ligula vel mauris sodales elementum. Aenean aliquam ultricies magna non fermentum. Phasellus fermentum eros nec erat semper, eu consectetur est vehicula. Nam mauris mauris, egestas ut ex quis, vulputate interdum orci. Sed vel ante est. Aliquam nec justo auctor neque volutpat convallis. Sed a ullamcorper urna. In facilisis est in ante congue congue. Praesent ligula nibh, imperdiet et sem at, finibus convallis ligula.</p>
-<h2>routing</h2>
-<p>
-Sed sit amet faucibus felis. Praesent vel purus mauris. Ut in molestie dolor. Donec non augue sit amet justo auctor condimentum eget ut nisl. Mauris magna lacus, egestas sit amet diam vitae, molestie gravida sapien. Nulla ultrices risus eu velit elementum, et interdum magna rhoncus. Sed accumsan nunc tempus consectetur molestie. Aenean a nisl ultricies, venenatis quam sed, hendrerit neque. Suspendisse eros nunc, rutrum quis purus a, molestie efficitur felis. Donec porttitor lobortis ex a rutrum. Vivamus sed imperdiet mi. Sed eget nisi vel augue elementum tempor. Nullam aliquet pulvinar magna, at elementum erat venenatis sed.
-</p>
-<a href="#topics">Back to top</a>
-</section>
-<section id="sql">
-  <table>
+  <h3>common commands</h3>
+  <table class="cheat">
+    <tr>
+      <th>
+        command
+      </th>
+      <th>
+        description
+      </th>
+    </tr>
     <tr>
       <td>
-        ./.bash_profile
+        <b>rails new [project-name]</b>
       </td>
       <td>
-        <p>
-          this is where you go to set up alias and configure bash.
-        </p>
-        <p>
-          usually found in your home directory.
-        </p>
+        creates a new reails project on your local machine
       </td>
     </tr>
     <tr>
       <td>
-        man
+        <b>rails generate [model, view, controller, migration ...] [class-name]</b>
       </td>
       <td>
-        <p>
-          man formats and displays the on-line manual pages.  If you specify sec-
-          tion, man only looks in that section of the manual.  name  is  normally
-          the  name of the manual page, which is typically the name of a command,
-          function, or file.  However, if name contains  a  slash  (/)  then  man
-          interprets  it  as a file specification, so that you can do man ./foo.5
-          or even man /cd/foo/bar.1.gz.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        pwd
-      </td>
-      <td>
-        <p>
-          The pwd utility writes the absolute pathname of the current working
-          directory to the standard output.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        which <program name>
-      </td>
-      <td>
-        <p>
-          The which utility takes a list of command names and searches the path for each executable file that would be run had these commands actually been invoked.
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        brew <program name>
-      </td>
-      <td>
-        <p>
-          Homebrew is the easiest and most flexible way to install the UNIX tools
-          Apple didn't include with OS X.
-          <a href="#">more on brew commands</a>
-        </p>
+        creates a model, view, controller etc...with the given class-name.<br>
+        also creates necessary dependent files.
       </td>
     </tr>
   </table>
+<h3>conventions</h3>
+<h3>routing</h3>
 <a href="#topics">Back to top</a>
+<br>
 </section>
+<hr>
+<section id="sql">
+  <h1>Structured Query Language</h1>
+  Again SQL is a very large topic. Here is a link for beginners <a href="http://www.w3schools.com/sql/default.asp">W3school/sql</a>
+  <br>
+<a href="#topics">Back to top</a>
+<br>
+</section>
+<hr>
 <section id="d3">
+  <h1>D3</h1>
   <h2>Data mapping tool</h2>
 <p>
   don't know what I don't know
 </p>
+<br>
 <a href="#topics">Back to top</a>
+<br>
 </section>
 </div>
 </body>

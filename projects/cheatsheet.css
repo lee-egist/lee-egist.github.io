@@ -1,3 +1,31 @@
 body{
-  padding:3em;
+  padding:1.5em;
+  font-size: 1.25em;
+  height: 850px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+#title{
+  text-align: center;
+}
+#topics{
+  width:100%;
+}
+#topics td{
+  width:75%;
+}
+.cheat{
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+.cheat tr{
+
+}
+.cheat td, th{
+  padding:.5em;
+  border: 1px solid black;
+}
+#cite{
+  font-size: .75em;
 }
