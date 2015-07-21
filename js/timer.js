@@ -1,12 +1,11 @@
 function count(){
   setInterval(function() {
     var myTime = new Date();
-    var end = new Date(2015, 6, 26, 9, 0, 0);
+    var end = new Date(2015, 7, 27, 9, 0, 0);
     var count = end - myTime;
     var timeleft = new Date(count);
-    var offset = myTime.getTimezoneOffset();
     console.log(offset);
-    var days = paddnum(timeleft.getUTCDate());
+    var days = paddnum(timeleft.getDate());
     var hours = paddnum(timeleft.getUTCHours());
     var min = paddnum(timeleft.getMinutes());
     var sec = paddnum(timeleft.getSeconds());
