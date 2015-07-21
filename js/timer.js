@@ -3,7 +3,7 @@ function countdown(){
   var end = new Date(2015, 6, 27, 9);
   var count = end - myTime;
   var timeleft = new Date(count);
-  var days = timeleft.getDate();
+  var days = timeleft.getUTCDate();
   var hours = timeleft.getUTCHours();
   var min = timeleft.getMinutes();
   var sec = timeleft.getSeconds();
@@ -17,7 +17,7 @@ function count(){
     var end = new Date(2015, 6, 27, 9);
     var count = end - myTime;
     var timeleft = new Date(count);
-    var days = paddnum(timeleft.getDate());
+    var days = paddnum(timeleft.getUTCDate());
     var hours = paddnum(timeleft.getUTCHours());
     var min = paddnum(timeleft.getMinutes());
     var sec = paddnum(timeleft.getSeconds());
