@@ -5,6 +5,7 @@ function count(){
     var count = end - myTime;
     var timeleft = new Date(count);
     var offset = myTime.getTimezoneOffset() / 24
+    console.log(offset);
     var days = paddnum(timeleft.getDate());
     var hours = paddnum(timeleft.getUTCHours());
     var min = paddnum(timeleft.getMinutes());
